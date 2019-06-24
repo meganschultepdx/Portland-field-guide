@@ -1,0 +1,14 @@
+/* @font-face {
+  font-family: "Roboto-Regular";
+  src: url("../assets/roboto/Roboto-Regular.ttf");
+} */
+
+nav {
+  background-color: #36373a;
+  opacity: .8;
+  position: fixed;
+  top: 0;
+  width: 100%; 
+  z-index: 1;
+  text-transform: uppercase;
+}
