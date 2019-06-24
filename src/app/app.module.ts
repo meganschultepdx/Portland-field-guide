@@ -11,6 +11,7 @@ import { NativesComponent } from './natives/natives.component';
 import { InvasivesComponent } from './invasives/invasives.component';
 import { PlantOfDayComponent } from './plant-of-day/plant-of-day.component';
 import { IdGuideComponent } from './id-guide/id-guide.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { IdGuideComponent } from './id-guide/id-guide.component';
     NativesComponent,
     InvasivesComponent,
     PlantOfDayComponent,
-    IdGuideComponent
+    IdGuideComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
