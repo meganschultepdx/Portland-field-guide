@@ -6,6 +6,8 @@ import { NativesComponent } from './natives/natives.component';
 import { InvasivesComponent } from './invasives/invasives.component';
 import { PlantOfDayComponent } from './plant-of-day/plant-of-day.component';
 import { IdGuideComponent } from './id-guide/id-guide.component';
+import { MissionComponent } from './mission/mission.component';
+import { NavigationLinksComponent } from './navigation-links/navigation-links.component';
 
 const appRoutes: Routes = [
     {
@@ -32,6 +34,14 @@ const appRoutes: Routes = [
         path: 'idGuide',
         component: IdGuideComponent
       },
+      {
+        path: 'mission',
+        component: MissionComponent
+      },
+      {
+        path: 'navigation-links',
+        component: NavigationLinksComponent
+      }
     ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

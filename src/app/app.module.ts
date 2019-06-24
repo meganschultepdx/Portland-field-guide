@@ -13,6 +13,8 @@ import { PlantOfDayComponent } from './plant-of-day/plant-of-day.component';
 import { IdGuideComponent } from './id-guide/id-guide.component';
 import { AboutComponent } from './about/about.component';
 import { MaterializeModule } from 'ngx-materialize';
+import { MissionComponent } from './mission/mission.component';
+import { NavigationLinksComponent } from './navigation-links/navigation-links.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { MaterializeModule } from 'ngx-materialize';
     InvasivesComponent,
     PlantOfDayComponent,
     IdGuideComponent,
-    AboutComponent
+    AboutComponent,
+    MissionComponent,
+    NavigationLinksComponent
   ],
   imports: [
     BrowserModule,
