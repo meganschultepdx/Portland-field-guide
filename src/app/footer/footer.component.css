@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .page-footer {
+    background-color: #36373a;
+    opacity: .8;
+  }
+
+  #about {
+      color: white;
+      display: flex; 
+      align-items: center;
+  }
+
+  #copyright {
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+  }
+  
+  #facebook {
+    padding: 6px;
+  }
+  
+  #twitter {
+    padding: 6px;
+  }
+  
+  #youtube {
+    padding: 6px;
+  }
+  
+  #instagram{
+    padding: 6px;
+  }
+  
+  #snapchat {
+    padding: 6px;
+  }
+  
+  #socialMedia {
+    text-align: right;
+    color: #86a6b1;
+    margin-right: 10px;
+    
+  }
