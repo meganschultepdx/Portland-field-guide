@@ -11,6 +11,7 @@ body {
   .page-footer {
     background-color: #36373a;
     opacity: .8;
+    flex-shrink: 0;
   }
 
   #about {
@@ -49,5 +50,4 @@ body {
     text-align: right;
     color: #86a6b1;
     margin-right: 10px;
-    
-  }
+}
