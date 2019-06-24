@@ -12,6 +12,7 @@ import { InvasivesComponent } from './invasives/invasives.component';
 import { PlantOfDayComponent } from './plant-of-day/plant-of-day.component';
 import { IdGuideComponent } from './id-guide/id-guide.component';
 import { AboutComponent } from './about/about.component';
+import { MaterializeModule } from 'ng2-materialize';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AboutComponent } from './about/about.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterializeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
