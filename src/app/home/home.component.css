@@ -1,5 +1,36 @@
 .background {
-    background-size: cover; 
-    
-    background-repeat: no-repeat;
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.container {
+  /* position: relative; */
+  text-align: center;
+}
+
+/* If the screen size is 601px wide or more, set the font-size of .centered to 3em */
+@media screen and (min-width: 601px) {
+  div.centered {
+    font-size: 3.5em;
+    top: 20%;
+  }
+}
+
+.no-margin {
+  margin: 0 ! important;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.centered {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: .9;
+  font-size: 1.5em;
+  letter-spacing: 1px;
 }
