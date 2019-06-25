@@ -1,53 +1,43 @@
 body {
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
     }
-
-  main {
-    flex: 1 0 auto;
-  }
-
+    
   .page-footer {
     background-color: #36373a;
     opacity: .8;
     flex-shrink: 0;
+    padding-left: 20px;
   }
 
   #about {
-      color: white;
-      display: flex; 
-      align-items: center;
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 1px;
   }
 
-  #copyright {
-      display: flex; 
-      justify-content: center;
-      align-items: center;
+  .socialMedia {
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
-  
+
   #facebook {
-    padding: 6px;
+    padding-right: 6px;
   }
   
   #twitter {
-    padding: 6px;
+    padding-right: 6px;
   }
   
   #youtube {
-    padding: 6px;
+    padding-right: 6px;
   }
   
   #instagram{
-    padding: 6px;
+    padding-left: 6px;
   }
   
   #snapchat {
-    padding: 6px;
+    padding-left: 6px;
   }
   
-  #socialMedia {
-    text-align: right;
-    color: #86a6b1;
-    margin-right: 10px;
-}
