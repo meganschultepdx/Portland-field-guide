@@ -1,6 +1,6 @@
 "native-plants": [{
     "id": "",
-    "image_url": [""],
+    "image_url": ["https://www.watershednursery.com/wp-content/uploads/2014/04/IMG_0380-1.jpg", "https://www.watershednursery.com/wp-content/uploads/2014/04/IMG_0379-1.jpg"],
     "common_name": "Wood Fern",
     "scientific_name": "Dryopteris arguta",
     "isNative": true,
@@ -27,7 +27,7 @@
 
     {
     "id": "",
-    "image_url": [""],
+    "image_url": ["http://www.heritageseedlings.com/shop/images/th_viopra_april.jpg", "https://s3.amazonaws.com/media.jungledragon.com/images/1590/50138_small.jpg?AWSAccessKeyId=05GMT0V3GWVNE7GGM1R2&Expires=1562198410&Signature=b6mwN%2BdV13jz2pJ6ApQIJyDJw1U%3D"],
     "common_name": "Canary Violet",
     "scientific_name": "Viola praemorsa var. praemorsa",
     "isNative": true,
@@ -52,7 +52,7 @@
 
     {
     "id": "",
-    "image_url": [""],
+    "image_url": ["http://www.goert.ca/propagation_guidelines/sites/default/files/images/Trifolium-wormskjoldii-larg.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Trifolium_pratense_-_Keila2.jpg/440px-Trifolium_pratense_-_Keila2.jpg"],
     "common_name": "White-Tip Clover",
     "scientific_name": "Trifolium variegatum",
     "isNative": true,
@@ -100,7 +100,7 @@
 
     {
         "id": "",
-        "image_url": [""],
+        "image_url": ["https://www.google.com/imgres?imgurl=https%3A%2F%2Fpics.davesgarden.com%2Fpics%2F2013%2F08%2F22%2FCville_Gardener%2F96c947.jpg&imgrefurl=https%3A%2F%2Fdavesgarden.com%2Fcommunity%2Fforums%2Ffp.php%3Fpid%3D9637993&docid=63nkWZLfKJa0aM&tbnid=Zr6_Pdv-TiRNWM%3A&vet=12ahUKEwj35beKkIXjAhURO30KHWQpA584yAEQMyhRMFF6BAgBEFI..i&w=445&h=594&bih=1241&biw=1200&q=schoenoplectus%20pungens%20American%20Bulrush&ved=2ahUKEwj35beKkIXjAhURO30KHWQpA584yAEQMyhRMFF6BAgBEFI&iact=mrc&uact=8", "https://www.google.com/imgres?imgurl=https%3A%2F%2Fguides.nynhp.org%2Fmedia%2Fi13180.jpg&imgrefurl=https%3A%2F%2Fguides.nynhp.org%2Fslender-bulrush%2F&docid=dr7oUyLMOIKFoM&tbnid=KIVg_ezM_NlZbM%3A&vet=12ahUKEwjo3eP0j4XjAhV2HzQIHaRhA-g4ZBAzKD8wP3oECAEQQA..i&w=800&h=600&bih=1241&biw=1200&q=schoenoplectus%20pungens%20American%20Bulrush&ved=2ahUKEwjo3eP0j4XjAhV2HzQIHaRhA-g4ZBAzKD8wP3oECAEQQA&iact=mrc&uact=8"],
         "common_name": "American Bulrush",
         "scientific_name": "Schoenoplectus pungens",
         "isNative": true,
@@ -124,7 +124,7 @@
 
     {
         "id": "",
-        "image_url": [""],
+        "image_url": ["https://extension.umass.edu/landscape/sites/landscape/files/weeds/stems/tyhla3961w.jpg", "https://media-public.canva.com/MADCcbufD6s/1/thumbnail_large.jpg"],
         "common_name": "Common Cattail",
         "scientific_name": "Typha latifolia",
         "isNative": true,
