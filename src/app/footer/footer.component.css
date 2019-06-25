@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    }
+
+  .page-footer {
+    background-color: #36373a;
+    opacity: .8;
+    flex-shrink: 0;
+    padding-left: 20px;
+  }
+
+  #about {
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+  }
+
+  .socialMedia {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  #facebook {
+    padding-right: 6px;
+  }
+
+  #twitter {
+    padding-right: 6px;
+  }
+
+  #youtube {
+    padding-right: 6px;
+  }
+
+  #instagram{
+    padding-left: 6px;
+  }
+
+  #snapchat {
+    padding-left: 6px;
+  }
