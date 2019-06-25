@@ -8,6 +8,8 @@ import { PlantOfDayComponent } from './plant-of-day/plant-of-day.component';
 import { IdGuideComponent } from './id-guide/id-guide.component';
 import { MissionComponent } from './mission/mission.component';
 import { NavigationLinksComponent } from './navigation-links/navigation-links.component';
+import { AboutComponent } from './about/about.component';
+
 
 const appRoutes: Routes = [
     {
@@ -42,6 +44,10 @@ const appRoutes: Routes = [
         path: 'navigation-links',
         component: NavigationLinksComponent
       }
+        path: 'about',
+        component: AboutComponent
+      },
+
     ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
