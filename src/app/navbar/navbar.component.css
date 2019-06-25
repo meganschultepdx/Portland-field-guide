@@ -11,4 +11,11 @@ nav {
   width: 100%; 
   z-index: 1;
   text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.sidenav {
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
