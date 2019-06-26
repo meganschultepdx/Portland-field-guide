@@ -11,6 +11,7 @@ import { FirebaseListObservable } from 'angularfire2/database';
 })
 export class NativesListComponent implements OnInit {
   native_list: FirebaseListObservable<any[]>;
+  community_list: FirebaseListObservable<any[]>;
 
   selectedCommunity = null;
 
