@@ -15,9 +15,13 @@ nav {
   /* font-family: Roboto-Regular; */
 }
 
-.sidenav {
+.sidenav-overlay {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 1px;
   background-color: white;
+}
+
+li a {
+  text-transform: uppercase;
 }
