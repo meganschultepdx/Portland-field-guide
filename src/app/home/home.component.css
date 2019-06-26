@@ -106,6 +106,10 @@
   letter-spacing: 1px;
 }
 
+.borders a {
+  color: black;
+}
+
 .links {
   position: absolute;
   top: 50%;

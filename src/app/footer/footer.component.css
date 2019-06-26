@@ -18,6 +18,10 @@ body {
     letter-spacing: 1px;
   }
 
+  .about {
+    padding-top: 10px;
+  }
+
   .socialMedia {
     padding-bottom: 20px;
     padding-top: 20px;
