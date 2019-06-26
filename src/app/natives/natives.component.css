@@ -1,6 +1,6 @@
 #forest-header {
     background-image: url("./../../assets/img/forest.png");
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
     background-color: #000;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
 
 #wetlands-header {
     background-image: url("./../../assets/img/wetland.png");
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
     background-color: #000;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@
 
 #plains-header {
     background-image: url("./../../assets/img/plains.png");
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
     background-color: #000;
     background-size: cover; 
     background-repeat: no-repeat;
@@ -36,4 +36,8 @@
     color: #fff;
     text-transform: uppercase;
     
+}
+
+.nativeCommunities h1 {
+    text-align: center;
 }
