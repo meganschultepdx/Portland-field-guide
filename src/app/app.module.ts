@@ -14,15 +14,15 @@ import { PlantOfDayComponent } from './plant-of-day/plant-of-day.component';
 import { IdGuideComponent } from './id-guide/id-guide.component';
 import { AboutComponent } from './about/about.component';
 
-import { masterFirebaseConfig } from './api-keys';
+// import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 export const firebaseConfig = {
-  apiKey: masterFirebaseConfig.apiKey,
-  authDomain: masterFirebaseConfig.authDomain,
-  databaseURL: masterFirebaseConfig.databaseURL,
-  storageBucket: masterFirebaseConfig.storageBucket
+  // apiKey: masterFirebaseConfig.apiKey,
+  // authDomain: masterFirebaseConfig.authDomain,
+  // databaseURL: masterFirebaseConfig.databaseURL,
+  // storageBucket: masterFirebaseConfig.storageBucket
 }
 
 @NgModule({

@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
   font-family: "Roboto-Regular";
   src: url("../assets/roboto/Roboto-Regular.ttf");
-}
+} */
 
 nav {
   background-color: #36373a;
@@ -12,7 +12,7 @@ nav {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 1px;
-  font-family: Roboto-Regular;
+  /* font-family: Roboto-Regular; */
 }
 
 .sidenav {

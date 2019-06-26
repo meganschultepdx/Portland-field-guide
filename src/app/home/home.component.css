@@ -6,7 +6,6 @@
 .background {
   background-size: cover; 
   background-repeat: no-repeat;
-  margin-top: 20px;
 }
 
 .container {
@@ -48,16 +47,23 @@
 .more {
     padding-top: 10px;
 }
-.welcomePage {
-    margin-top: 20px;
-  
+
+#welcome {
+  font-size: 1.8em;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  }
+
+#mission {
+  font-size: 1em;
+  padding-bottom: 48px;
 }
 
 .come-in {
   transform: translateY(150px);
   animation: come-in 0.8s ease forwards;
 }
-.come-in:nth-child(odd) {
+.come-in {
   animation-duration: 0.6s;
 }
 .already-visible {
@@ -67,4 +73,8 @@
 
 @keyframes come-in {
   to { transform: translateY(0); }
+}
+
+#secondArrow {
+  padding-bottom: 40px;
 }
