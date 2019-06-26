@@ -17,20 +17,22 @@
 @media screen and (min-width: 601px) {
   div.centered {
     font-size: 3.5em;
-    top: 20%;
+    top: -80%;
   }
 }
 
 
 .centered {
   position: absolute;
-  top: 20%;
+  top: -25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  opacity: .9;
-  font-size: 1.75em;
+  color: black;
+  /* opacity: .9; */
+  font-size: 2em;
+  font-weight: 700px;
   letter-spacing: 1px;
+  /* text-shadow: 2px 2px #545555; */
 }
 
 #title {
@@ -52,7 +54,7 @@
   padding-bottom: 48px;
 }
 
-.come-in {
+/* .come-in {
   transform: translateY(150px);
   animation: come-in 0.8s ease forwards;
 }
@@ -66,7 +68,7 @@
 
 @keyframes come-in {
   to { transform: translateY(0); }
-}
+} */
 
 #secondArrow {
   padding-bottom: 40px;
@@ -81,8 +83,11 @@
 }
 
 .borders {
-  border: 2px solid white;
-  border-color: white;
+  border: 2px solid rgb(100, 97, 97);
+  border-color: rgb(100, 97, 97);
+  background: rgb(100, 97, 97);
+  width: 60%;
+  height: 30px;
   opacity: .8;
   padding: 20 30 20 30;
   border-radius: 8px;
