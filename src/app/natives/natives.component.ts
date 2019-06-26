@@ -1,19 +1,26 @@
 import { Component, OnInit } from '@angular/core';
-declare var $: any;
+import { Router } from '@angular/router';
+import { DatabaseService } from '../database.service';
+import { FirebaseListObservable } from 'angularfire2/database';
+// declare var $: any;
 
 @Component({
   selector: 'app-natives',
   templateUrl: './natives.component.html',
-  styleUrls: ['./natives.component.css']
+  styleUrls: ['./natives.component.css'],
+  providers: [DatabaseService]
 })
 export class NativesComponent implements OnInit {
+  native_list: FirebaseListObservable<any[]>;
 
-  constructor() { }
+  constructor(private router: Router, private databaseService: DatabaseService) { }
 
   ngOnInit() {
-    $(document).ready(function(){
-      $('.collapsible').collapsible();
-    });
+    this.native_list = this.databaseService.getNativeList();
+    // $(document).ready(function(){
+    //   $('.collapsible').collapsible();
+    // });
   }
 
 }
+

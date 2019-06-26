@@ -6,6 +6,7 @@ export class DatabaseService {
   native_list: FirebaseListObservable<any[]>;
   invasive_list: FirebaseListObservable<any[]>;
   community_list: FirebaseListObservable<any[]>;
+  erradicate_list: FirebaseListObservable<any[]>;
 
   constructor(private database: AngularFireDatabase) {
     this.native_list = database.list('native_plants/');
@@ -29,4 +30,16 @@ export class DatabaseService {
   //   return this.database.object('flowers/' + flowerId);
   // }
 
+  getMustErradicate() {
+    return this.database.list('/invasive_plants', ref => ref.orderByChild('is_erradication_req').equalTo(true));
+
+  }
 }
+
+// let ref = database.list("invasive_plants");
+// ref("value", function(snapshot) {
+//   console.log(snapshot.val());.child('invasive_plants').orderByChild('is_erradication_req').equalTo(true).on
+//   snapshot.forEach(function(data) {
+//       console.log(data.key);
+//   });
+// });
