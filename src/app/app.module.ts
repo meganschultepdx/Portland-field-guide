@@ -17,6 +17,7 @@ import { AboutComponent } from './about/about.component';
 // import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { GlossaryComponent } from './glossary/glossary.component';
 
 export const firebaseConfig = {
   // apiKey: masterFirebaseConfig.apiKey,
@@ -36,7 +37,8 @@ export const firebaseConfig = {
     InvasivesComponent,
     PlantOfDayComponent,
     IdGuideComponent,
-    AboutComponent
+    AboutComponent,
+    GlossaryComponent
   ],
   imports: [
     BrowserModule,
