@@ -21,13 +21,6 @@
   }
 }
 
-.no-margin {
-  margin: 0 ! important;
-}
-
-.no-wrap {
-  white-space: nowrap;
-}
 
 .centered {
   position: absolute;
@@ -40,19 +33,19 @@
   letter-spacing: 1px;
 }
 
-/* #title {
-  font-family: Roboto-Regular;
-} */
+#title {
+  /* font-family: Roboto-Regular; */
+}
 
 .more {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
 #welcome {
   font-size: 1.8em;
   padding-top: 60px;
   padding-bottom: 20px;
-  }
+}
 
 #mission {
   font-size: 1em;
@@ -77,4 +70,20 @@
 
 #secondArrow {
   padding-bottom: 40px;
+}
+
+.no-margin {
+  margin: 0 ! important;
+}
+      
+.no-wrap {
+  white-space: nowrap;
+}
+
+.borders {
+  border: 2px solid white;
+  border-color: white;
+  opacity: .8;
+  padding: 20 30 20 30;
+  border-radius: 8px;
 }
