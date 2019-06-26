@@ -56,11 +56,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  /* opacity: .9; */
   font-size: 2em;
   font-weight: 700px;
   letter-spacing: 1px;
-  /* text-shadow: 2px 2px white; */
 }
 
 #title {
