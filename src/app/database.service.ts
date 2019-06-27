@@ -8,6 +8,7 @@ export class DatabaseService {
   invasive_list: FirebaseListObservable<any[]>;
   community_list: FirebaseListObservable<any[]>;
   plants: any[] = [];
+  community;
 
   constructor(private database: AngularFireDatabase) {
     this.native_list = database.list('native_plants/');
@@ -25,6 +26,32 @@ export class DatabaseService {
   
   getCommunityList() {
     return this.community_list;
+  }
+
+  getCommunityById(communityId: string) {
+    return this.database.object('communities/' + communityId); 
+  }
+
+  getCommunityName(communityId: string) {
+    this.getCommunityById(communityId).subscribe(val => {
+      this.community = val.name;
+      console.log(val);
+      console.log(val.name);
+      console.log(this.community);
+    })
+    // let community = this.database.object('communities/' + communityId);
+    // return community.name;
+  }
+
+  getPlantsOfCommunity() {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].plant_community.includes('western hemlock-douglas fir forest') === true) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
   }
 
   getMustErradicate() {
