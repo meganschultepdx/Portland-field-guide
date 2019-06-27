@@ -9,8 +9,6 @@
         <p class="blurb">{{(selectedCommunity | async)?.blurb}}</p>
 
         <h5 class="description">{{(selectedCommunity | async)?.description}}</h5>
-        
-        <h5>Plant type: <span>(tree / forb / shrub)</span></h5>
 
         <div *ngFor="let plant of communityPlants">
         <div class="card">
@@ -20,20 +18,42 @@
 
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">{{plant.common_name}} | <span class="sci-name">{{plant.scientific_name}}</span><i class="material-icons right"></i></span>
-              <p><a (click)="goToDetailPage(plant)">See more details</a></p>
+              <h3 class="plant-type"><span class="bold-type"> Plant type:</span> {{plant.plant_type}}</h3>
             </div>
             
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
                 <span>
                   {{plant.common_name}}
                 </span>| 
                 <span class="sci-name">
                   {{plant.scientific_name}}
                 </span>
-                <i class="material-icons right">close</i>
               </span>
+
+              <img id="second-image" class="activator" src="{{plant.image_url[1]}}">
+
               <p>{{plant.description}}</p>
+
+              <p>Mature Height: {{plant.mature_height}}</p>
+              <p>Life Cycle: {{plant.life_cycle}}</p>
+              <ul>
+                  <li *ngFor="let id of plant.light">{{id}} 
+                  </li>
+                </ul>
+              <p>Will grow in these soil moistures:</p>
+              <ul>
+                  <li *ngFor="let id of plant.moisture">{{id}} 
+                  </li>
+                </ul>
+
+              <!-- <div [hidden]="!plant.has_flowers">
+                <div *ngFor="let property of plant.flowers">
+                  <p>{{property}}</p>
+                </div>
+              </div> -->
+              
             </div>
           </div> 
         </div>     
