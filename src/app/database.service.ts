@@ -1,7 +1,9 @@
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+// import { NativeList} from './native_list.model';
 
 @Injectable()
+
 export class DatabaseService {
   native_list: FirebaseListObservable<any[]>;
   invasive_list: FirebaseListObservable<any[]>;
