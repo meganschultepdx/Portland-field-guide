@@ -32,21 +32,79 @@ export class DatabaseService {
     return this.database.object('communities/' + communityId); 
   }
 
-  getCommunityName(communityId: string) {
-    this.getCommunityById(communityId).subscribe(val => {
-      this.community = val.name;
-      console.log(val);
-      console.log(this.community);
-    })
-    // let community = this.database.object('communities/' + communityId);
-    // return community.name;
-  }
-
-  getPlantsOfCommunity() {
+  getPlantsOfCommunity(communityName: string) {
     this.plants = [];
     this.getNativeList().subscribe(values=> {
       for (var i = 0; i < values.length; i ++) {
-        if (values[i].plant_community.includes('western hemlock-douglas fir forest') === true) {
+        if (values[i].plant_community.includes(communityName) === true) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+    console.log(this.plants);
+    // return this.plants;
+  }
+
+  getByType(type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].plant_type === type) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByFlower() {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByCommunityTypeFlower(community: string, type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true && values[i].plant_community.includes(community) && values[i].plant_type === type) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByCommunityType(community: string, type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].plant_type === type && values[i].plant_community.includes(community)) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByCommunityFlower(community: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true && values[i].plant_community.includes(community)) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByTypeFlower(type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true && values[i].plant_type === type) {
           this.plants.push(values[i]);
         }
       }
@@ -86,4 +144,5 @@ export class DatabaseService {
       }
     });
   }
+
 }
