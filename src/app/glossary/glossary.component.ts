@@ -38,6 +38,6 @@ export class GlossaryComponent implements OnInit {
         this.words.push(element);
         console.log(this.words);
       }
-    });
+      )};
   }
 }

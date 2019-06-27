@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+#bottomText {
+  padding-bottom: 20px;
+}
+
 #image {
   padding-top: 65px;
   display: flex;
