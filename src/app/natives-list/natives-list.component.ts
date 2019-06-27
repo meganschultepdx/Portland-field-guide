@@ -33,7 +33,7 @@ export class NativesListComponent implements OnInit {
     this.databaseService.getCommunityName(this.communityId);
     this.communityName = this.databaseService.community;
     this.selectedCommunity = this.databaseService.getCommunityById(this.communityId);
-    this.databaseService.getPlantsOfCommunity();
+    this.databaseService.getPlantsOfCommunity(this.selectedCommunity.name);
     this.plants = this.databaseService.plants;
     this.communityName = this.selectedCommunity.name;
     console.log(this.communityName);

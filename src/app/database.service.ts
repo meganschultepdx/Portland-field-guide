@@ -43,11 +43,77 @@ export class DatabaseService {
     // return community.name;
   }
 
-  getPlantsOfCommunity() {
+  getPlantsOfCommunity(community: string) {
     this.plants = [];
     this.getNativeList().subscribe(values=> {
       for (var i = 0; i < values.length; i ++) {
-        if (values[i].plant_community.includes('western hemlock-douglas fir forest') === true) {
+        if (values[i].plant_community.includes(community) === true) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByType(type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].plant_type === type) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByFlower() {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByCommunityTypeFlower(community: string, type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true && values[i].plant_community.includes(community) && values[i].plant_type === type) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByCommunityType(community: string, type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].plant_type === type && values[i].plant_community.includes(community)) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByCommunityFlower(community: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true && values[i].plant_community.includes(community)) {
+          this.plants.push(values[i]);
+        }
+      }
+    });
+  }
+
+  getByTypeFlower(type: string) {
+    this.plants = [];
+    this.getNativeList().subscribe(values=> {
+      for (var i = 0; i < values.length; i ++) {
+        if (values[i].has_flowers === true && values[i].plant_type === type) {
           this.plants.push(values[i]);
         }
       }
@@ -87,4 +153,5 @@ export class DatabaseService {
       }
     });
   }
+
 }
