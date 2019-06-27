@@ -2,7 +2,7 @@
   <h1>Search By...</h1>
   <div class="input-field col s12">
       <select (change)="onChange($event.target.value)" #nativeOrInvasive>
-        <option value="" disabled selected>Choose your option</option>
+        <option value="" selected>Choose your option</option>
         <option value="native">Native</option>
         <option value="invasive">Invasive</option>
       </select>
@@ -11,7 +11,7 @@
   <div *ngIf="searchOps === 'native'" id="native"> 
     <div class="input-field col s12">
         <select #byType>
-          <option value="" disabled selected>Search by Type of Plant</option>
+          <option value="" selected>Search by Type of Plant</option>
           <option value="tree">Tree</option>
           <option value="shrub">Shrub</option>
           <option value="forb">Forb</option>
@@ -23,7 +23,7 @@
     </div>
     <div class="input-field col s12">
         <select #byCommunity>
-          <option value="" disabled selected>Search by Community</option>
+          <option value="" selected>Search by Community</option>
           <option value="western hemlock-douglas fir forest">Western Hemlock-Douglas Fir Forest</option>
           <option value="mixed coniferous/deciduous riparian forest">Mixed Coniferous/Deciduous Riparian Forest</option>
           <option value="scrub-shrub wetlands">Scrub-Shrub Wetlands</option>
@@ -36,7 +36,7 @@
     </div>
     <div class="input-field col s12">
         <select #hasFlowers>
-          <option value="" disabled selected>Want to See Plants with Flowers?</option>
+          <option value="" selected>Want to See Plants with Flowers?</option>
           <option value="true">Yes</option>
           <option value="false">No</option>
         </select>
@@ -47,7 +47,7 @@
   <div *ngIf="searchOps === 'invasive'" id="invasive"> 
     <div class="input-field col s12">
       <select #erradicate>
-        <option value="" disabled selected>Plants on the Must Erradicate List</option>
+        <option value="" selected>Plants on the Must Erradicate List</option>
         <option value="true">Yes</option>
         <option value="false">No</option>
       </select>
@@ -55,7 +55,7 @@
     </div>
     <div>
       <select #byInvasiveRank>
-        <option value="" disabled selected>Search by Invasive Rank</option>
+        <option value="" selected>Search by Invasive Rank</option>
         <option value="A">Rank A Plants</option>
         <option value="B">Rank B Plants</option>
         <option value="C">Rank C Plants</option>
@@ -70,7 +70,26 @@
 
 <div *ngIf="searchOps === 'native'"> 
   <div *ngFor="let plant of result_list | async">
-    <h1>native search woo!</h1>
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{plant.image_url[0]}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{plant.common_name}}<i class="material-icons right"></i></span>
+        <p><a (click)="goToDetailPage(plant)">See Details</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{plant.name}}<i class="material-icons right">close</i></span>
+        <p>Scientific Name: <em>{{plant.scientific_name}}</em></p>
+        <p>Description: <em>{{plant.description}}</em></p>
+        <p>Type: <em>{{plant.plant_type}}</em></p>
+        <span *ngIf="plant.mature_height !== null"><p>Mature Height: <em>{{plant.mature_height}}</em></p></span>
+        <p>Plant Communities: <span *ngFor="let community of plant.plant_community"><em>{{community}}, </em></span></p>
+        <p>Habitat(s): <span *ngFor="let habitat of plant.habitat_type"><em>{{habitat}}, </em></span></p>
+        <p>Light: <span *ngFor="let light of plant.light"><em>{{light}}, </em></span></p>
+        <!-- <p>Moisture: <span *ngFor="let wetness of plant.moisture"><em>{{wetness}}, </em></span></p> -->
+      </div>
+    </div>
   </div>
 </div>
 
@@ -96,21 +115,21 @@
 </div>
 
 <div *ngIf="searchOps === 'invasive' && mustErradicate === true"> 
-    <div *ngFor="let plant of plants | async"> 
-      <div class="card">
-        <div class="card-image waves-effect waves-block waves-light">
-          <img class="activator" src="{{plant.image_url[0]}}">
-        </div>
-        <div class="card-content">
-          <span class="card-title activator grey-text text-darken-4">{{plant.common_name}}<i class="material-icons right"></i></span>
-          <p><a (click)="goToDetailPage(plant)">See Details</a></p>
-        </div>
-        <div class="card-reveal">
-          <span class="card-title grey-text text-darken-4">{{plant.name}}<i class="material-icons right">close</i></span>
-          <p>Scientific Name: <em>{{plant.scientific_name}}</em></p>
-          <p>Must erradicate?: <em>{{plant.is_erradication_req}}</em></p>
-          <p>Invaisve Rank: <em>{{plant.invasive_rank}}</em></p>
-        </div>
+  <div *ngFor="let plant of plants"> 
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="{{plant.image_url[0]}}">
       </div>
-    </div>  
-  </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4">{{plant.common_name}}<i class="material-icons right"></i></span>
+        <p><a (click)="goToDetailPage(plant)">See Details</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{plant.name}}<i class="material-icons right">close</i></span>
+        <p>Scientific Name: <em>{{plant.scientific_name}}</em></p>
+        <p>Must erradicate?: <em>{{plant.is_erradication_req}}</em></p>
+        <p>Invaisve Rank: <em>{{plant.invasive_rank}}</em></p>
+      </div>
+    </div>
+  </div>  
+</div>

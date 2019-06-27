@@ -16,15 +16,13 @@ export class SearchComponent implements OnInit {
   invasive_list: FirebaseListObservable<any[]>;
   searchOps: string = null;
   mustErradicate = false;
-  plants;
+  plants = [];
 
   constructor(private router: Router, private databaseService: DatabaseService) { }
 
   ngOnInit() {
     this.invasive_list = this.databaseService.getInvasiveList();
-    // this.native_list = this.databaseService.getNativeList();
-    // this.community_list = this.databaseService.getCommunityList();
-    this.plants = this.databaseService.getMustErradicate();
+    console.log(this.plants);
     $(document).ready(function(){
       $('select').formSelect();
     });
@@ -52,32 +50,30 @@ export class SearchComponent implements OnInit {
     console.log(nativeOrInvasive);
     console.log(erradicate);
     console.log(byInvasiveRank);
-    if (nativeOrInvasive === 'invasive' && erradicate === "true" && byInvasiveRank === "A" || byInvasiveRank === "B" || byInvasiveRank === "C" || byInvasiveRank === "D" || byInvasiveRank === "W") {
+    if (nativeOrInvasive === 'invasive' && erradicate === 'true' && byInvasiveRank === 'A' || byInvasiveRank === 'B' || byInvasiveRank === 'C' || byInvasiveRank === 'D' || byInvasiveRank === 'W') {
       this.result_list = null;
-      this.plants = this.databaseService.getByRank(byInvasiveRank);
+      this.databaseService.getByRank(byInvasiveRank);
+      this.plants = this.databaseService.plants;
+      console.log('rank and erradicate');
       console.log(this.plants);
-    } else if (nativeOrInvasive === 'invasive' && byInvasiveRank === "A" || byInvasiveRank === "B" || byInvasiveRank === "C" || byInvasiveRank === "D" || byInvasiveRank === "W") {
+    } else if (nativeOrInvasive === 'invasive' && (erradicate === 'false' || erradicate === '') && byInvasiveRank === 'A' || byInvasiveRank === 'B' || byInvasiveRank === 'C' || byInvasiveRank === 'D' || byInvasiveRank === 'W') {
       this.result_list = null;
-      this.plants = this.databaseService.getByRankAndErradicate(byInvasiveRank);
+      this.databaseService.getByRankAndErradicate(byInvasiveRank);
+      this.plants = this.databaseService.plants;
+      console.log('rank');
       console.log(this.plants);
-    } else if (nativeOrInvasive === 'invasive' && erradicate === "true") {
+    } else if (nativeOrInvasive === 'invasive' && erradicate === 'true') {
       this.result_list = null;
       this.mustErradicate = true;
-      // this.databaseService.test();
+      console.log('erradicate');
+      this.databaseService.getMustErradicate();
+      this.plants = this.databaseService.plants;
       console.log(this.plants);
-      console.log(this.invasive_list);
     } else if (nativeOrInvasive === 'invasive') {
       this.plants = null;
       this.result_list = this.databaseService.getInvasiveList();
+      console.log('else');
     }
   }
 
 }
-
-
-
-// (value => {
-//   console.log(value);
-  
-//   value.is_erradication_req === true;
-// })
