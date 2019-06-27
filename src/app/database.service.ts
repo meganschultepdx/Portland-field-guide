@@ -7,13 +7,25 @@ export class DatabaseService {
   native_list: FirebaseListObservable<any[]>;
   invasive_list: FirebaseListObservable<any[]>;
   community_list: FirebaseListObservable<any[]>;
+  glossary_list: FirebaseListObservable<any[]>;
   plants: any[] = [];
+  // words: any[] = [];
   community;
 
   constructor(private database: AngularFireDatabase) {
     this.native_list = database.list('native_plants/');
     this.invasive_list = database.list('invasive_plants/');
     this.community_list = database.list('communities/');
+    this.glossary_list = database.list('glossary/');
+    // console.log(this.glossary_list);
+  }
+
+  getGlossary() {
+    return this.glossary_list;
+  }
+
+  getGlossaryByLetter(glossaryId: string) {
+    return this.database.object('glossary/' + glossaryId);
   }
 
   getNativeList() {
@@ -23,13 +35,13 @@ export class DatabaseService {
   getInvasiveList() {
     return this.invasive_list;
   }
-  
+
   getCommunityList() {
     return this.community_list;
   }
 
   getCommunityById(communityId: string) {
-    return this.database.object('communities/' + communityId); 
+    return this.database.object('communities/' + communityId);
   }
 
   getPlantsOfCommunity(communityName: string) {
@@ -42,7 +54,6 @@ export class DatabaseService {
       }
     });
     console.log(this.plants);
-    // return this.plants;
   }
 
   getByType(type: string) {
@@ -116,7 +127,7 @@ export class DatabaseService {
     this.getInvasiveList().subscribe(values=> {
       for (var i = 0; i < values.length; i ++) {
         if (values[i].is_erradication_req === true) {
-          
+
           this.plants.push(values[i]);
         }
       }

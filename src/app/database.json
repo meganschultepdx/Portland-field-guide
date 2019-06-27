@@ -1,149 +1,172 @@
 { "glossary": {
         "A": {
-            "achene": "A non-fleshy, single-seeded fruit",
-            "alternate": "Type of leaf arrangement in which only a single leaf is attached at each node. Term may also apply to other plant structures attached one per node",
-            "annual": "A plant with a 1-year life cycle, growing from seed, producing flowers and fruits, and dying in 1 year",
-            "axil": "The upper angle between the point of attachment of a leaf and stem",
-            "axis": "Main line of growth"
-            },
+          "definition": [
+            "achene: A non-fleshy, single-seeded fruit",
+            "alternate: Type of leaf arrangement in which only a single leaf is attached at each node. Term may also apply to other plant structures attached one per node",
+            "annual: A plant with a 1-year life cycle, growing from seed, producing flowers and fruits, and dying in 1 year",
+            "axil: The upper angle between the point of attachment of a leaf and stem",
+            "axis: Main line of growth"
+          ]},
         "B": {
-            "banner": "The enlarged upper petal of a flower of the pea family (Fabaceae)",
-            "basal": "Occuring at the bottom",
-            "beak": "A prolonged, usually narrowed tip of a thicker structure, as in some fruits and petals",
-            "biennial": "A plant that requires 2 growing seasons to complete its development from germination of the seed through flowering and death",
-            "biflorum": "Having two flowers",
-            "biforked": "Divided into two branches, as in hairs that are split near the tip into two separate branches",
-            "bilateral (symmetry)": "Divisible into identical halves in only one plane; found in 'irregular' flowers such as orchids",
-            "blade": "The expanded, flattened part of a leaf or petal",
-            "bract": "A reduced leaf subtending a flower, usually associated with the inflorescence",
-            "bristle": "A hair-like structure; in members of the sunflower family (Asteraceae), it refers to one type of pappus, while in certain members of the sedge family (Cyperaceae) it refers to reduced perianth parts",
-            "bulbous": "Enlarged, bulb-shaped structure",
-            "bur": "Prickly seed envelope armed with spines or hooks, usually adapted for dispersal by animals"
-        },
+          "definition": [
+            "banner: The enlarged upper petal of a flower of the pea family (Fabaceae)",
+            "basal: Occuring at the bottom",
+            "beak: A prolonged, usually narrowed tip of a thicker structure, as in some fruits and petals",
+            "biennial: A plant that requires 2 growing seasons to complete its development from germination of the seed through flowering and death",
+            "biflorum: Having two flowers",
+            "biforked: Divided into two branches, as in hairs that are split near the tip into two separate branches",
+            "bilateral (symmetry): Divisible into identical halves in only one plane; found in 'irregular' flowers such as orchids",
+            "blade: The expanded, flattened part of a leaf or petal",
+            "bract: A reduced leaf subtending a flower, usually associated with the inflorescence",
+            "bristle: A hair-like structure; in members of the sunflower family (Asteraceae), it refers to one type of pappus, while in certain members of the sedge family (Cyperaceae) it refers to reduced perianth parts",
+            "bulbous: Enlarged, bulb-shaped structure",
+            "bur: Prickly seed envelope armed with spines or hooks, usually adapted for dispersal by animals"
+        ]},
         "C": {
-            "calyx": "Outer whorl of flowering parts, collective term for all the sepals of a flower, (plural = calyces)",
-            "capillus veneris": "Hair-like",
-            "capsule": "A dry fruit that opens by slits, lids, pores, or teeth to release seeds",
-            "catkin": "An inflorescence composed of an often drooping, or pendulous, cluster of an often drooping, or pendulous, cluster of unisexual, petal-less flowers, typical of wind pollinated trees and shrubs, such as willows, cottonwoods, oaks, and birches; also called an ament",
-            "cluster": "A number of similar flowers or fruits growing closely together.",
-            "compound": "Two or more similar parts of a plant, especially fruits or leaves, united together into one whole",
-            "compound leaf": "A leaf divided into leaflets",
-            "cordifolia": "Heart-shaped",
-            "corm": "An enlarged solid bulb-like stem, usually underground",
-            "cyme": "Broad, flat flower cluster",
-            "cytotoxic": "poisonous to cells"
-        },
+          "definition": [
+            "calyx: Outer whorl of flowering parts, collective term for all the sepals of a flower, (plural = calyces)",
+            "capillus veneris: Hair-like",
+            "capsule: A dry fruit that opens by slits, lids, pores, or teeth to release seeds",
+            "catkin: An inflorescence composed of an often drooping, or pendulous, cluster of an often drooping, or pendulous, cluster of unisexual, petal-less flowers, typical of wind pollinated trees and shrubs, such as willows, cottonwoods, oaks, and birches; also called an ament",
+            "cluster: A number of similar flowers or fruits growing closely together.",
+            "compound: Two or more similar parts of a plant, especially fruits or leaves, united together into one whole",
+            "compound leaf: A leaf divided into leaflets",
+            "cordifolia: Heart-shaped",
+            "corm: An enlarged solid bulb-like stem, usually underground",
+            "cyme: Broad, flat flower cluster",
+            "cytotoxic: poisonous to cells"
+        ]},
         "D": {
-            "deciduous": "Falling off; not permanent or evergreen",
-            "didyma": "In pairs",
-            "diphylla": "two-leaved",
-            "disk": "The tubular flowers found at the center of the flower head of man members of the sunflower family (Asteraceae)",
-            "drupe": "Fleshy seeded fruit with one seed enclosed in a stony cover; peach, apricot"
-        },
+          "definition": [
+            "deciduous: Falling off; not permanent or evergreen",
+            "didyma: In pairs",
+            "diphylla: two-leaved",
+            "disk: The tubular flowers found at the center of the flower head of man members of the sunflower family (Asteraceae)",
+            "drupe: Fleshy seeded fruit with one seed enclosed in a stony cover; peach, apricot"
+        ]},
         "E": {
-            "emmenagogue": "An agent that induces menstrual flow",
-            "entire": "Undivided; in leaves; having the leaf margins smooth rather that incised or toothed",
-            "enzyme": "Organic substance causing chemical changes without undergoing any change of its own",
-            "evergreen": "Bearing green leaves or stems over winter; not deciduous"
-        },
+          "definition": [
+            "emmenagogue: An agent that induces menstrual flow",
+            "entire: Undivided; in leaves; having the leaf margins smooth rather that incised or toothed",
+            "enzyme: Organic substance causing chemical changes without undergoing any change of its own",
+            "evergreen: Bearing green leaves or stems over winter; not deciduous"
+        ]},
         "F": {
-            "fibrous roots": "Roots with several to many more or less equal branches; lacking a large central taproot",
-            "floret": "The reduced flower of grasses, consisting of a lemma, palea, stamens, and pistil",
-            "frond": "Leaf of fern or palm",
-            "frondosa": "Full of leaves",
-            "funiculus": "The stalk attaching the ovule or seed to the wall of the ovary, (plural = funiculi); a structure of diagnostic value for Physaria spp. (Brassicaceae)"
-        },
+          "definition": [
+            "fibrous roots: Roots with several to many more or less equal branches; lacking a large central taproot",
+            "floret: The reduced flower of grasses, consisting of a lemma, palea, stamens, and pistil",
+            "frond: Leaf of fern or palm",
+            "frondosa: Full of leaves",
+            "funiculus: The stalk attaching the ovule or seed to the wall of the ovary, (plural = funiculi); a structure of diagnostic value for Physaria spp. (Brassicaceae)"
+        ]},
         "G": {
-            "garbling": "Process of sorting out and cleaning the usable parts of plants",
-            "genera": "Groups of related plants",
-            "glabrous": "Without hairs",
-            "glumes": "The pair of bracts at the base of a grass spikelet"
-        },
+          "definition": [
+            "garbling: Process of sorting out and cleaning the usable parts of plants",
+            "genera: Groups of related plants",
+            "glabrous: Without hairs",
+            "glumes: The pair of bracts at the base of a grass spikelet"
+        ]},
         "H": {
-            "habitat": "The part of the environment where a plant grows",
-            "head": "A dense cluster of flowers, usually nearly spherical in outline. Individual flowers in the head are usually sessile or nearly so",
-            "herb": "Leafy upper portion of plant, minus roots",
-            "herbaceous": "Non-woody; dying to the ground each year",
-            "husk": "Outer covering of seed or fruits"
-        },
+          "definition": [
+            "habitat: The part of the environment where a plant grows",
+            "head: A dense cluster of flowers, usually nearly spherical in outline. Individual flowers in the head are usually sessile or nearly so",
+            "herb: Leafy upper portion of plant, minus roots",
+            "herbaceous: Non-woody; dying to the ground each year",
+            "husk: Outer covering of seed or fruits"
+        ]},
         "I": {
-            "incision": "A sharp, narrow notch or separation, as in the margin of a leaf",
-            "inflorescence": "The flowering part of a plant, usually referring to a cluster of flowers on a single stem",
-            "inrolled": "Curled or curved inwards; involute"
-        },
+          "definition": [
+            "incision: A sharp, narrow notch or separation, as in the margin of a leaf",
+            "inflorescence: The flowering part of a plant, usually referring to a cluster of flowers on a single stem",
+            "inrolled: Curled or curved inwards; involute"
+        ]},
         "J": {
-            "juicy": "Having juice"
-        },
+          "definition": [
+            "juicy: Having juice"
+        ]},
         "K": {
-            "keel": "A prominent ridge, shaped like the keel of a boat; in some members of the pea family (Fabaceae), the lower, boat-shaped petal of the flower that encloses the ovary and stamens"
-        },
+          "definition": [
+            "keel: A prominent ridge, shaped like the keel of a boat; in some members of the pea family (Fabaceae), the lower, boat-shaped petal of the flower that encloses the ovary and stamens"
+        ]},
         "L": {
-            "lateriflora": "Having flowers on the side",
-            "leaflet": "Any subdivision of a compound leaf",
-            "leafstalk": "Stem of a leaf",
-            "lemma": "The larger of the two bracts (the other being the palea) that enclose the stamens and pistil in a grass floret.",
-            "lip": "The lowermost, often highly modified, petal of some flowers (such as orchids, mints, and penstemons)",
-            "lobe": "Rounded part or segment of an organ, usually part of a leaf or petal",
-            "luteum": "Yellow"
-        },
+          "definition": [
+            "lateriflora: Having flowers on the side",
+            "leaflet: Any subdivision of a compound leaf",
+            "leafstalk: Stem of a leaf",
+            "lemma: The larger of the two bracts (the other being the palea) that enclose the stamens and pistil in a grass floret.",
+            "lip: The lowermost, often highly modified, petal of some flowers (such as orchids, mints, and penstemons)",
+            "lobe: Rounded part or segment of an organ, usually part of a leaf or petal",
+            "luteum: Yellow"
+        ]},
         "M": {
-            "maculata": "Spotted",
-            "medica": "Middle",
-            "membranous": "Thin, soft, and pliable",
-            "millefolium": "Many-leaved",
-            "mucilaginous": "Slimy"
-        },
+          "definition": [
+            "maculata: Spotted",
+            "medica: Middle",
+            "membranous: Thin, soft, and pliable",
+            "millefolium: Many-leaved",
+            "mucilaginous: Slimy"
+        ]},
         "N": {
-            "needle": "Long, narrow, sharp-pointed leaves, such as those of many conifers and some clubmosses",
-            "node": "The point of attachment of a leaf or leaves on a stem; the joint of a stem",
-            "nudicaulis": "Naked-stemmed",
-            "nutlet": "A small, one-seeded, nut-like structure; the specialized fruit of members of the borage (Boraginaceae) and mint families (Lamiaceae)"
-        },
+          "definition": [
+            "needle: Long, narrow, sharp-pointed leaves, such as those of many conifers and some clubmosses",
+            "node: The point of attachment of a leaf or leaves on a stem; the joint of a stem",
+            "nudicaulis: Naked-stemmed",
+            "nutlet: A small, one-seeded, nut-like structure; the specialized fruit of members of the borage (Boraginaceae) and mint families (Lamiaceae)"
+        ]},
         "O": {
-            "odoratissima": "Very fragrant",
-            "opposite": "Type of leaf arrangement in which two leaves are attached on opposite sides of a stem at the same node",
-            "ovary": "The part of the pistil of a flower that contains the ovules"
-        },
+          "definition": [
+            "odoratissima: Very fragrant",
+            "opposite: Type of leaf arrangement in which two leaves are attached on opposite sides of a stem at the same node",
+            "ovary: The part of the pistil of a flower that contains the ovules"
+        ]},
         "P": {
-            "palmate": "Lobed or veined with branches arising from a common point, like the fingers of a hand",
-            "parviflorum": "Small-flowered",
-            "peregrina": "Traveling from a strange country",
-            "perennial": "A plant that lives for three or more years",
-            "petal": "The usually colored, individual components of the corolla of a flower; literally the leaves of a flower",
-            "pistil": "The ovule-bearing structure of a flower, consisting of a stigma, style, and ovary; the 'female' part of a flower",
-            "pod": "A dry seed vessel or fruit"
-        },
+          "definition": [
+            "palmate: Lobed or veined with branches arising from a common point, like the fingers of a hand",
+            "parviflorum: Small-flowered",
+            "peregrina: Traveling from a strange country",
+            "perennial: A plant that lives for three or more years",
+            "petal: The usually colored, individual components of the corolla of a flower; literally the leaves of a flower",
+            "pistil: The ovule-bearing structure of a flower, consisting of a stigma, style, and ovary; the 'female' part of a flower",
+            "pod: A dry seed vessel or fruit"
+        ]},
         "Q": {
-            "quinquefolium": "Five-leaved"
-        },
+          "definition": [
+            "quinquefolium: Five-leaved"
+        ]},
         "R": {
-            "receptacle": "The enlarged tip of the flowering stem that bears all or most of the flower parts",
-            "riparian": "Relating to wetlands adjacent to rivers and streams",
-            "rootstock": "Slow-growing, woody upright underground base of a perennial herb that gives rise to yearly growth of stems and leaves; caudex"
-        },
+          "definition": [
+            "receptacle: The enlarged tip of the flowering stem that bears all or most of the flower parts",
+            "riparian: Relating to wetlands adjacent to rivers and streams",
+            "rootstock: Slow-growing, woody upright underground base of a perennial herb that gives rise to yearly growth of stems and leaves; caudex"
+        ]},
         "S": {
-            "serotina": "Late-flowering",
-            "shrub": "A woody plant with several equally large stems from the base, usually less than 4.5 m tall",
-            "spore": "The reproductive body produced and dispersed by ferns, horsetails, club mosses and other 'lower' vascular plants that do not reproduce by true seeds"
-        },
+          "definition": [
+            "serotina: Late-flowering",
+            "shrub: A woody plant with several equally large stems from the base, usually less than 4.5 m tall",
+            "spore: The reproductive body produced and dispersed by ferns, horsetails, club mosses and other 'lower' vascular plants that do not reproduce by true seeds"
+        ]},
         "T": {
-            "tooth": "Any small, marginal lobe, usually on the edge of a leaf blade",
-            "tufted": "A close-growing cluster of stems, as in certain bunchgrasses, sedges, and mat-forming herbs"
-        },
+          "definition": [
+            "tooth: Any small, marginal lobe, usually on the edge of a leaf blade",
+            "tufted: A close-growing cluster of stems, as in certain bunchgrasses, sedges, and mat-forming herbs"
+        ]},
         "U": {
-            "umbel": "A flower cluster in which the individual flower stalks arise from a common point, like the rays of an umbrella"
-        },
+          "definition": [
+            "umbel: A flower cluster in which the individual flower stalks arise from a common point, like the rays of an umbrella"
+        ]},
         "V": {
-            "vein": "A vascular bundle of a leaf or petal; nerve",
-            "villosa": "Shaggy, hairy"
-        },
+          "definition": [
+            "vein: A vascular bundle of a leaf or petal; nerve",
+            "villosa: Shaggy, hairy"
+        ]},
         "W": {
-            "whorl": "Three or more flowers or leaves at a node forming a circle",
-            "wing": "A thin, often dry or leaf-like extension bordering a structure; in some members of the pea family (Fabaceae), the two lateral petals of the flower"
-        },
-        "X": {},
-        "Y": {},
-        "Z": {}
+          "definition": [
+            "whorl: Three or more flowers or leaves at a node forming a circle",
+            "wing: A thin, often dry or leaf-like extension bordering a structure; in some members of the pea family (Fabaceae), the two lateral petals of the flower"
+        ]},
+        "X": {"definition": []},
+        "Y": {"definition": []},
+        "Z": {"definition": []}
     },
 "communities": [{
     "image_url": ["https://live.staticflickr.com/2678/4357917187_9b5b223ec8_b.jpg","https://cdn7.dissolve.com/p/D1294_17_309/D1294_17_309_1200.jpg"],
@@ -446,7 +469,7 @@
     }],
 "native_plants": [{
     "image_url": [
-        "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjQiPnkhIXjAhVFlFQKHZ8sCmQQjRx6BAgBEAU&url=https%3A%2F%2Fwww.amazon.com%2FHirts-Gardens-Abies-Grandis-Grand%2Fdp%2FB000V6RB0U&psig=AOvVaw0lRRzXVstbi-Ladvu8r1Rl&ust=1561565988701714",
+        "https://olympicchristmastrees.com/store/wp-content/uploads/2016/10/grandfir.jpg",
         "https://emswcd.org/wp-content/uploads/2013/11/Abies_grandis_2.jpg"],
     "common_name": "Grand Fir",
     "scientific_name": "Abies grandis",
@@ -466,7 +489,7 @@
         "notes": null,
         "flowering_months": []
     }},{
-    "image_url": ["https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiatdDChoXjAhVHwFQKHWyPCi0QjRx6BAgBEAU&url=https%3A%2F%2Fwww.backyardnature.net%2Fn%2Fw%2Fmadrone.htm&psig=AOvVaw2LxCkrQjFDmh4htxiFDAJi&ust=1561566286973580", "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjo6orbhoXjAhXKllQKHR3oA2sQjRx6BAgBEAU&url=https%3A%2F%2Fwww.natureoutside.com%2Fthe-refrigerator-tree%2F&psig=AOvVaw2LxCkrQjFDmh4htxiFDAJi&ust=1561566286973580"],
+    "image_url": ["http://www.natureoutside.com/wp-content/uploads/2015/07/0-MadroneTree.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Pacific_Madrone_Arbutus_menziesii_Peeling_tree_bark2.jpg/1024px-Pacific_Madrone_Arbutus_menziesii_Peeling_tree_bark2.jpg"],
     "common_name": "Pacific Madrone",
     "scientific_name": "Arbutus menziesii",
     "isNative": true,
@@ -485,7 +508,7 @@
         "notes": null,
         "flowering_months": ["mar", "apr"]
     }},{
-    "image_url": ["https://portlandnursery.com/plants/images/pinus/pinus-ponderosa-bark350.jpg", "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjms_ODh4XjAhXljlQKHSGbCYYQjRx6BAgBEAU&url=http%3A%2F%2Fcedarmillnews.com%2Farchive%2F606%2Fvalley_ponderosa.html&psig=AOvVaw2uCEkl7e13mh3XZgbLNLpo&ust=1561566586390166"],
+    "image_url": ["https://portlandnursery.com/plants/images/pinus/pinus-ponderosa-bark350.jpg", "https://cdn11.bigcommerce.com/s-gp99ab/products/3247/images/7789/ponderosa__35086.1542957728.500.659.jpg?c=2"],
     "common_name": "Willamette Valley Ponderosa Pine",
     "scientific_name": "Pinus ponderosa var. benthamiana",
     "isNative": true,
