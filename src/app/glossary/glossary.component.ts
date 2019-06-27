@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { DatabaseService } from '../database.service';
-import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
+// import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 declare var $: any;
 
 @Component({

@@ -21,7 +21,13 @@ h1 {
   margin-top: 10px;
 }
 
-h2 {
-  font-size: 1.8em;
+.text {
+  text-align: center;
 }
 
+
+hr {
+  width: 250px;
+  height: 2px;
+  background: black;
+}
