@@ -18,6 +18,8 @@ export class InvasivesComponent implements OnInit {
     this.invasive_list = this.databaseService.getInvasiveList();
   }
 
+  
+
   // goToDetailPage(clickedFlower: Flower) {
   //   this.router.navigate(['details', clickedFlower.$key])
   // }
