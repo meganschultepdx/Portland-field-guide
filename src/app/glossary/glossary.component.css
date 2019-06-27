@@ -18,5 +18,8 @@
 
 #selectedLetter {
   text-align: center;
-  
+}
+
+.content-wrapper {
+  padding-bottom: 100px;
 }
