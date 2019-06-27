@@ -37,7 +37,8 @@ export class GlossaryComponent implements OnInit {
       x.definition.forEach(function(element) {
         this.words.push(element);
         console.log(this.words);
-      }
+      })
     });
   }
+
 }

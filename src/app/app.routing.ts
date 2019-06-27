@@ -47,6 +47,10 @@ const appRoutes: Routes = [
   {
     path: 'native_communities/:communityId/plants/:plantId',
     component: PlantDetailComponent
+  },
+  {
+    path: 'idGuide/glossary',
+    component: GlossaryComponent
   }
 ];
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
