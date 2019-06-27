@@ -1,0 +1,39 @@
+.content-wrapper {
+  padding-bottom: 100px;
+}
+
+.guide {}
+
+.container {
+  position: relative;
+}
+
+.titles {
+  text-align: center;
+}
+
+#botanist {
+  padding-top: 15%;
+}
+
+.floatLeft {
+  text-align: right;
+
+}
+
+.floatRight {
+  text-align: left;
+}
+
+.imagesRight{
+  height: 150px;
+}
+
+.imagesLeft{
+  height: 150px;
+  width: auto;
+}
+
+.columns {
+  column-count: 2;
+}

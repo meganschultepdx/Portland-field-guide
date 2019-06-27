@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 import { FirebaseListObservable } from 'angularfire2/database';
+declare var $: any;
 
 @Component({
   selector: 'app-invasives',
@@ -15,8 +16,13 @@ export class InvasivesComponent implements OnInit {
   constructor(private router: Router, private databaseService: DatabaseService) { }
 
   ngOnInit() {
+    $(document).ready(function(){
+      $('.collapsible').collapsible();
+    });
     this.invasive_list = this.databaseService.getInvasiveList();
   }
+
+  
 
   // goToDetailPage(clickedFlower: Flower) {
   //   this.router.navigate(['details', clickedFlower.$key])

@@ -1,0 +1,182 @@
+.content-wrapper {
+  padding-bottom: 100px;
+  /* margin-bottom: 100px;  */
+}
+
+/* .plantOfDay {
+  padding-bottom: 300px;
+  margin-bottom: 1000px; 
+} */
+
+/* @font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../assets/roboto/Roboto-Regular.ttf");
+} */
+
+.background {
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+/* @media screen and (min-width: 601px) {
+  #background {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+} */
+
+.parallax-container {
+  height: 600px;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+
+/* If the screen size is 601px wide or more, set the font-size of .centered to 3em */
+@media screen and (min-width: 601px) {
+  div.centered {
+    font-size: 3.5em;
+    top: -20;
+    z-index: 1;
+  }
+}
+
+/* @media screen and (min-width: 500px) {
+  div.centered {
+    font-size: 2em;
+    top: -30%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  div.centered {
+    font-size: 1.75em;
+    top: -30%;
+  }
+} */
+
+
+.centered {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 2em;
+  font-weight: 700px;
+  letter-spacing: 1px;
+}
+
+#title {
+  text-transform: uppercase;
+}
+
+.more {
+  padding-top: 10px;
+}
+
+#welcome {
+  font-size: 1.8em;
+  padding-top: 55px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 601px) {
+  #welcome {
+    font-size: 3.75em;
+  }
+}
+
+#mission {
+  font-size: 1em;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* @media screen and (min-width: 601px) {
+  #mission {
+    font-size: 2em;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+} */
+
+/* .come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+} */
+
+
+#secondArrow {
+  padding-bottom: 45px;
+}
+
+.no-margin {
+  margin: 0 ! important;
+}
+
+.container {
+  width: 100%;
+}
+      
+.no-wrap {
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 601px) {
+  div.borders {
+    font-size: 3.75em;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 50px;
+  }
+}
+
+.borders {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid white;
+  border-color: white;
+  background: white;
+  /* width: 60%; */
+  /* height: 30px; */
+  padding: 20 30 20 30;
+  border-radius: 4px;
+  opacity: .7;
+  padding: 10px;
+  margin: 20px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+}
+
+.borders a {
+  color: black;
+}
+
+.links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}

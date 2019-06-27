@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#icon {
+  padding-top: 80px;
+}
+
+.formBody {
+  padding-bottom: 20px;
+}
+
+.title {
+  font-size: 2em;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  text-transform: uppercase;  
+  text-align: center;
+}
+
+#directions {
+  text-align: center;
+  color: grey;
+  margin: 0;
+}
+
+label {
+  font-size: 1.5em;
+  white-space: nowrap;
+  padding-bottom: 20px;
+  margin-left: 58px;
+  margin-right: auto;
+  text-align: center;
+}
+
+.content-wrapper {
+  padding-bottom: 100px;
+}

@@ -5,17 +5,23 @@
 
 nav {
   background-color: #36373a;
-  opacity: .8;
+  opacity: .7;
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 50;
   text-transform: uppercase;
   letter-spacing: 1px;
+  /* font-family: Roboto-Regular; */
 }
 
-.sidenav {
+.sidenav-overlay {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 1px;
+  background-color: white;
+}
+
+li a {
+  text-transform: uppercase;
 }
