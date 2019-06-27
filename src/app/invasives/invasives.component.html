@@ -1,25 +1,26 @@
 <div class="content-wrapper">
   <div id="image" class="container">
-    <img src="../../assets/img/maple-leaf.svg" alt="leaf icon" width="125px">
+    <img src="../../assets/img/black-berry.png" alt="leaf icon" width="100px">
   </div>
   <div id="explanation" class="container">
     <div>
       <h1 id="title">invasive plants</h1>
-      <p>The plants on this list are invasive; they threaten the health and vitality of native habitats, humans, and
-        cause economic harm to public and to private landowners. Planting of these plants should be avoided and removal
-        encouraged.</p>
-      <p>Some were intentionally introduced, while others arrived incidentally. It is easy to transport plants. For
-        example, non-native or ornamental plants can be purchased and installed in gardens. Vehicles can track plant
-        seeds
-        on tires. Humans can track seeds on their shoes, and livestock and pets can transport seed on their fur or feet.
-        Many plant seeds or plant parts (e.g. knotweed rhizomes or shoots) are dispersed by wind and water. Animals may
-        eat seeds and deposit them. Knowing how plants reproduce and spread is very helpful in preventing the vector
-        distribution and controlling populations once established.</p>
-      <p>While many non-native plants introduced into this region have reproduced rapidly, not all non-native plants
-        become invasive. When plants are no longer in their native environment, they enter new relationships within the
-        ecological communities they occupy. Sometimes, they cause very little disruption to the systems they enter,
-        while
-        at other times they cause great disturbance. </p>
+      <div class="text">
+        <p>The plants on this list are invasive; they threaten the health and vitality of native habitats, humans, and
+          cause economic harm to public and to private landowners. Planting of these plants should be avoided and
+          removal
+          encouraged.</p>
+          <img src="../../assets/img/vine.png" alt="vine icon" width="125px">
+          <p>Some were intentionally introduced, while others arrived incidentally. Non-native or ornamental plants can be planted in gardens; vehicles can track plant seeds on tires; humans can track seeds on their shoes, and livestock and pets can transport seed on their fur or feet or through their excrement; many plant seeds or plant parts (e.g. knotweed rhizomes or shoots) are dispersed by wind and water.</p>
+          <img src="../../assets/img/vine.png" alt="vine icon" width="125px">
+          <p id="bottomText">Knowing how plants reproduce and spread is very helpful in preventing the vector
+            distribution and controlling populations once established. While many non-native plants introduced into this region have reproduced rapidly, not all non-native plants
+          become invasive. When plants are no longer in their native environment, they enter new relationships within
+          the
+          ecological communities they occupy. Sometimes, they cause very little disruption to the systems they enter,
+          while
+          at other times they cause great disturbance. </p>
+      </div>
     </div>
   </div>
   <img id="graph" src="../../assets/img/invasion-curve.png" alt="invasion curve" width="100%">
@@ -99,9 +100,12 @@
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">{{plant.name}}<i
               class="material-icons right">close</i></span>
-          <p>Scientific Name: <em>{{plant.scientific_name}}</em></p>
-          <p>Must erradicate?: <em>{{plant.is_erradication_req}}</em></p>
-          <p>Invaisve Rank: <em>{{plant.invasive_rank}}</em></p>
+          <p><b>Scientific Name</b><br>
+            <em>{{plant.scientific_name}}</em></p>
+          <p><b>Must eradicate?</b><br>
+             <em>{{plant.is_erradication_req}}</em></p>
+          <p><b>Invasive Rank</b><br>
+             <em>{{plant.invasive_rank}}</em></p>
         </div>
       </div>
     </div>
