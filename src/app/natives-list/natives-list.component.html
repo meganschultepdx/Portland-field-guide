@@ -34,18 +34,25 @@
 
               <img id="second-image" class="activator" src="{{plant.image_url[1]}}">
 
-
-              <ul>
-                <li *ngFor="let id of plant.moisture">{{id.moisture}} 
-                </li>
-              </ul>
-
-
               <p>{{plant.description}}</p>
 
               <p>Mature Height: {{plant.mature_height}}</p>
               <p>Life Cycle: {{plant.life_cycle}}</p>
+              <ul>
+                  <li *ngFor="let id of plant.light">{{id}} 
+                  </li>
+                </ul>
               <p>Will grow in these soil moistures:</p>
+              <ul>
+                  <li *ngFor="let id of plant.moisture">{{id}} 
+                  </li>
+                </ul>
+
+              <!-- <div [hidden]="!plant.has_flowers">
+                <div *ngFor="let property of plant.flowers">
+                  <p>{{property}}</p>
+                </div>
+              </div> -->
               
             </div>
           </div> 
