@@ -8,8 +8,7 @@
 
 
 ## Description
-This is a buildout to allow users to search local native and invasive plants in Portland, OR. 
-
+_This is a web application that allows users to search local native and invasive plants in Portland, OR. This app was designed to be used on a phone._
 
 ## Technologies Used
 
@@ -42,10 +41,19 @@ This is a buildout to allow users to search local native and invasive plants in 
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Resources
+_Portland Plant List, June 2016: `https://www.portlandoregon.gov/citycode/article/322280`._
+_Custom icons by Ashley using `www.figma.com`._
+
 ## Known Bugs
 There are no known bugs. 
 
 ## Support and contact details
-This application 
+Megan Schulte: megan.schulte.pdx@gmail.com
+Brooke Kullberg: brookekullberg@gmail.com
+Ashley Ancheta: ashleyjancheta@gmail.com
+Stuart McKay: ashleyjancheta@gmail.com
+Reese Lee: ashleyjancheta@gmail.com
+ 
 
 Copyright (c) 2019 **_Stuart Mckay, Reese Lee, Brooke Kullberg, Megan Sculte, AJ Ancheta_**
