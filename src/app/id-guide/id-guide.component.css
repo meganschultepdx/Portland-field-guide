@@ -10,10 +10,12 @@
 
 .titles {
   text-align: center;
+  margin-top: 0;
 }
 
 #botanist {
-  padding-top: 15%;
+  padding-top: 25%;
+  padding-right: 20%;
 }
 
 .floatLeft {
