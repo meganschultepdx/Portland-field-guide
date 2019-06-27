@@ -4,11 +4,9 @@
     <div  class="container">
         <h3 class="communityName">{{(selectedCommunity | async)?.name}}</h3>
 
-        <p>{{communityName}}</p>
-        
         <p class="blurb">{{(selectedCommunity | async)?.blurb}}</p>
 
-        <h5 class="description">{{(selectedCommunity | async)?.description}}</h5>
+        <p class="blurb">{{(selectedCommunity | async)?.description}}</p>
 
         <div *ngFor="let plant of communityPlants">
         <div class="card">
@@ -20,13 +18,13 @@
               <span class="card-title activator grey-text text-darken-4">{{plant.common_name}} | <span class="sci-name">{{plant.scientific_name}}</span><i class="material-icons right"></i></span>
               <h3 class="plant-type"><span class="bold-type"> Plant type:</span> {{plant.plant_type}}</h3>
             </div>
-            
+
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">
                 <i class="material-icons right">close</i>
                 <span>
                   {{plant.common_name}}
-                </span>| 
+                </span>|
                 <span class="sci-name">
                   {{plant.scientific_name}}
                 </span>
@@ -36,15 +34,15 @@
 
               <p>{{plant.description}}</p>
 
-              <p>Mature Height: {{plant.mature_height}}</p>
-              <p>Life Cycle: {{plant.life_cycle}}</p>
+              <p><b>Mature Height</b><br> {{plant.mature_height}}</p>
+              <p><b>Life Cycle</b> {{plant.life_cycle}}</p>
               <ul>
-                  <li *ngFor="let id of plant.light">{{id}} 
+                  <li *ngFor="let id of plant.light">{{id}}
                   </li>
                 </ul>
-              <p>Will grow in these soil moistures:</p>
+              <p><b>Will grow in these soil moistures</b></p>
               <ul>
-                  <li *ngFor="let id of plant.moisture">{{id}} 
+                  <li *ngFor="let id of plant.moisture">{{id}}
                   </li>
                 </ul>
 
@@ -53,11 +51,11 @@
                   <p>{{property}}</p>
                 </div>
               </div> -->
-              
+
             </div>
-          </div> 
-        </div>     
+          </div>
+        </div>
 
       </div>
     </body>
-</html>  
+</html>
