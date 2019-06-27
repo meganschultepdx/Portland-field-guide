@@ -11,3 +11,9 @@
 .bold-type {
     font-weight: bold;
 }
+
+#second-image {
+    width: 100%;
+    height: auto;
+    text-align: center center;
+}
