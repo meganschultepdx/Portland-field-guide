@@ -36,7 +36,6 @@ export class DatabaseService {
     this.getCommunityById(communityId).subscribe(val => {
       this.community = val.name;
       console.log(val);
-      console.log(val.name);
       console.log(this.community);
     })
     // let community = this.database.object('communities/' + communityId);

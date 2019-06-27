@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { DatabaseService } from '../database.service';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Location } from '@angular/common';
 
 @Component({
@@ -11,16 +11,15 @@ import { Location } from '@angular/common';
   providers: [DatabaseService]
 })
 export class NativesListComponent implements OnInit {
-  native_list: FirebaseListObservable<any[]>;
-  community_list: FirebaseListObservable<any[]>;
+
   communityId: string = null;
-  plants = [];
+  plants: FirebaseListObservable<any[]>;
 
   selectedCommunity;
   communityName;
 
-  constructor(private databaseService: DatabaseService, private route: ActivatedRoute, private location: Location) {
-
+  constructor(private databaseService: DatabaseService, private route: ActivatedRoute, private database: AngularFireDatabase) {
+    this.plants = database.list('native_plants/')
    }
 
   ngOnInit() {
@@ -28,13 +27,16 @@ export class NativesListComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.communityId = urlParameters['communityId'];
     })
+
+    this.database.list('/native_plants', { preserveSnapshot: true}).subscribe(snapshots=>{snapshots.forEach (snapshot=>{console.log(snapshot.key, snapshot.val())
+      });
+    })
     // this.native_list = this.databaseService.getNativeList();
     // this.community_list = this.databaseService.getCommunityList();
-    this.databaseService.getCommunityName(this.communityId);
-    this.communityName = this.databaseService.community;
+    this.communityName = this.databaseService.getCommunityName(this.communityId);
     this.selectedCommunity = this.databaseService.getCommunityById(this.communityId);
     this.databaseService.getPlantsOfCommunity();
-    this.plants = this.databaseService.plants;
+    // this.plants = this.databaseService.plants;
     this.communityName = this.selectedCommunity.name;
     console.log(this.communityName);
     console.log(this.selectedCommunity);

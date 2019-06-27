@@ -3,6 +3,8 @@
 
     <div  class="container">
         <h3 class="communityName">{{(selectedCommunity | async)?.name}}</h3>
+
+        <p>{{(communityName | async)?.name}}</p>
         
         <p class="blurb">{{(selectedCommunity | async)?.blurb}}</p>
 
@@ -10,8 +12,7 @@
         
         <h5>Plant type: <span>(tree / forb / shrub)</span></h5>
 
-        <div *ngFor="let plant of native_list | async">
-
+        <div *ngFor="let plant of plants | async">
         <div class="card">
             <div class="card-image waves-effect waves-block waves-light">
               <img class="activator" src="{{plant.image_url[0]}}">
@@ -26,8 +27,8 @@
               <span class="card-title grey-text text-darken-4"><span>{{plant.common_name}} </span>| <span class="sci-name">{{plant.scientific_name}}</span><i class="material-icons right">close</i></span>
               <p>{{plant.description}}</p>
             </div>
-          </div>
-        </div>    
+          </div> 
+        </div>     
 
       </div>
     </body>
