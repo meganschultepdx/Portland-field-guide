@@ -1,4 +1,55 @@
 <h1>INVASIVE PLANTS</h1>
+<h2>The plants on this list are invasive; they threaten the health and vitality of native habitats, humans, and cause economic harm to public and to private landowners. Planting of these plants should be avoided and removal encouraged.</h2>
+<h3>some were intentionally introduced, while others arrived incidentally. It is easy to transport plants. For example, non-native or ornamental plants can be purchased and installed in gardens. Vehicles can track plant seeds on tires. Humans can track seeds on their shoes, and livestock and pets can transport seed on their fur or feet. Many plant seeds or plant parts (e.g. knotweed rhizomes or shoots) are dispersed by wind and water. Animals may eat seeds and deposit them. Knowing how plants reproduce and spread is very helpful in preventing the vector distribution and controlling populations once established.</h3>
+<h3>While many non-native plants introduced into this region have reproduced rapidly, not all non-native plants become invasive. When plants are no longer  in their native environment, they enter new relationships within the ecological communities they occupy. Sometimes, they cause very little disruption to the systems they enter, while at other times they cause great disturbance. </h3>
+<img src="../../assets/img/invasion-curve.png" alt="invasion curve">
+<div class="container">
+  <div>
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header">Rank A Plants</div>
+        <div class="collapsible-body"><span>These species are known to be invasive. These species are known to occur but are not widely distributed in the region. Distribution is limited to a few sites. They spread rapidly and they are difficult to control once they become widespread.</span><br>
+      </div>
+      </li>
+    </ul>
+  </div>
+  <div>
+      <ul class="collapsible">
+        <li>
+          <div id="wetlands-header" class="collapsible-header">Rank B Plants</div>
+          <div class="collapsible-body"><span>These species are known to be invasive. These species are known to occur in the region. They are more abundant and widely distributed than A; however, the distribution is still limited to patches or specific habitats. Distribution is not as widespread as C plants. These species can spread rapidly and are difficult to control once they become widespread.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="collapsible">
+        <li>
+          <div id="wetlands-header" class="collapsible-header">Rank C Plants</div>
+          <div class="collapsible-body"><span>These species are known to be invasive. These species are widely distributed and abundant throughout the region. Their distribution is already very extensive throughout the natural areas and they are difficult to control once they become widespread. These plants are considered ubiquitous.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="collapsible">
+        <li>
+          <div id="wetlands-header" class="collapsible-header">Rank D Plants</div>
+          <div class="collapsible-body"><span> These species are known to be less aggressive than A, B, and C species. These species are known to occur in the region. These plants persist in the ecosystems with native species and therefore, have less impact on the system than the A, B, and C species.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <ul class="collapsible">
+        <li>
+          <div id="wetlands-header" class="collapsible-header">Rank W Plants</div>
+          <div class="collapsible-body"><span>Watch species. Species occurrence and distribution should be monitored for presence and/or to determine the level of invasiveness in the region.</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+</div>
 <div class="list container">
   <div *ngFor="let plant of invasive_list | async">
     <div class="card">
