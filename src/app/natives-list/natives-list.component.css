@@ -1,3 +1,19 @@
 .sci-name {
     font-style: italic;
 }
+
+.plant-type {
+    font-size: 1.25em;
+    margin-top: -0.5em;
+    text-transform: capitalize;
+}
+
+.bold-type {
+    font-weight: bold;
+}
+
+#second-image {
+    width: 100%;
+    height: auto;
+    text-align: center center;
+}

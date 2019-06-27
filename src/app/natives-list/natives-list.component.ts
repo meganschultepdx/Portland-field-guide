@@ -30,10 +30,9 @@ export class NativesListComponent implements OnInit {
     })
 
     this.selectedCommunity = this.databaseService.getCommunityById(this.communityId);
-
     this.selectedCommunity.subscribe( x => {
-      this.communityName = x.name; 
-      this.communityId = x.id;  
+      this.communityName = x.name;
+      this.communityId = x.id;
       console.log(this.communityName);
       this.databaseService.getNativeList().subscribe(values=> {
         for (var i = 0; i < values.length; i ++) {
