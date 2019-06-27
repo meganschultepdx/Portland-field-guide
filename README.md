@@ -1,5 +1,5 @@
 # Portland Field Guide
-## By: **_Stuart Mckay, Reese Lee, Brooke Kullberg, Megan Sculte, AJ Ancheta_**
+## By: **_Stuart Mckay, Reese Lee, Brooke Kullberg, Megan Schulte, AJ Ancheta_**
 
 #### _JavaScript, Week 5 Independent Project, *06.27.2019*_
 
