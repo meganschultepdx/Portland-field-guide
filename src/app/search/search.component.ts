@@ -52,12 +52,14 @@ export class SearchComponent implements OnInit {
     console.log(byInvasiveRank);
     if (nativeOrInvasive === 'invasive' && erradicate === 'true' && byInvasiveRank === 'A' || byInvasiveRank === 'B' || byInvasiveRank === 'C' || byInvasiveRank === 'D' || byInvasiveRank === 'W') {
       this.result_list = null;
+      this.mustErradicate = true;
       this.databaseService.getByRank(byInvasiveRank);
       this.plants = this.databaseService.plants;
       console.log('rank and erradicate');
       console.log(this.plants);
     } else if (nativeOrInvasive === 'invasive' && (erradicate === 'false' || erradicate === '') && byInvasiveRank === 'A' || byInvasiveRank === 'B' || byInvasiveRank === 'C' || byInvasiveRank === 'D' || byInvasiveRank === 'W') {
       this.result_list = null;
+      this.mustErradicate = true;
       this.databaseService.getByRankAndErradicate(byInvasiveRank);
       this.plants = this.databaseService.plants;
       console.log('rank');
@@ -71,6 +73,7 @@ export class SearchComponent implements OnInit {
       console.log(this.plants);
     } else if (nativeOrInvasive === 'invasive') {
       this.plants = null;
+      this.mustErradicate = false;
       this.result_list = this.databaseService.getInvasiveList();
       console.log('else');
     }
