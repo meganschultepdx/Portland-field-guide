@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare let $: any;
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+    $(document).ready(function () {
+      $('.parallax').parallax();
+    });
+    }
 
 }

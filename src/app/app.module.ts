@@ -13,6 +13,8 @@ import { InvasivesComponent } from './invasives/invasives.component';
 import { PlantOfDayComponent } from './plant-of-day/plant-of-day.component';
 import { IdGuideComponent } from './id-guide/id-guide.component';
 import { AboutComponent } from './about/about.component';
+import { NativesListComponent } from './natives-list/natives-list.component';
+import { PlantDetailComponent } from './plant-detail/plant-detail.component';
 
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
@@ -38,7 +40,9 @@ export const firebaseConfig = {
     PlantOfDayComponent,
     IdGuideComponent,
     AboutComponent,
-    GlossaryComponent
+    GlossaryComponent,
+    NativesListComponent,
+    PlantDetailComponent
   ],
   imports: [
     BrowserModule,

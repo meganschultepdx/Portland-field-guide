@@ -1,12 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 declare var $: any;
-
 @Component({
   selector: 'app-glossary',
   templateUrl: './glossary.component.html',
   styleUrls: ['./glossary.component.css'],
   // selector: 'ng-if-simple',
-
 })
 
 export class GlossaryComponent implements OnInit {
@@ -23,6 +21,7 @@ export class GlossaryComponent implements OnInit {
     $(document).ready(function(){
       $('.collapsible').collapsible();
     });
-  }
 
+
+}
 }
