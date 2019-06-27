@@ -1,23 +1,25 @@
 <div class="title">Plant of the day:</div>
 <img src="../../assets/img/stem.svg" alt="trillium" width="45px">
 <div class="explanation">
-  <p>Our recommendation for a local plant you can learn more about and then look for out in the wild!</p>
+  <p>Our recommendation for a local native plant you can learn more about and then look for out in the urban wild!</p>
 </div>
 
 <div>
   <ul class="collapsible">
     <li>
       <div id="plantName" class="collapsible-header">
-        <div class="image">{{natives.image_url}}
+        <div class="image">{{native_plants.image_url}}
         </div>
-        <div class="name"></div>
-        {{natives.common_name}}
+        <div class="commonName"></div>
+        {{native_plants.common_name}}
       </div>
-      <div class="collapsible-body"><span>
-        <div class=""></div>{{natives.}}</span>
-        <h3><a href="">Deciduous Forested Wetlands and Floodplains</a></h3>
-        <h3><a href="">Scrub-Shrub Wetlands</a></h3>
-        <h3><a href="">Marsh</a></h3>
+      <div class="collapsible-body">
+        <div>{{native_plants.scientific_name}}</div>
+        <div>{{native_plants.plant_community}}</div>
+        <div>{{native_plants.plant_type}}</div>
+        <div>{{native_plants.mature_height}}</div>
+        <div>{{native_plants.habitat_type}}</div>
+        <div>{{native_plants.description}}</div>
       </div>
     </li>
   </ul>
