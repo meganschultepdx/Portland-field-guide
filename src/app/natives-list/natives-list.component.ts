@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { DatabaseService } from '../database.service';
-import { FirebaseListObservable } from 'angularfire2/database';
+import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/database';
 import { Location } from '@angular/common';
 
 @Component({
@@ -11,39 +11,37 @@ import { Location } from '@angular/common';
   providers: [DatabaseService]
 })
 export class NativesListComponent implements OnInit {
-  native_list: FirebaseListObservable<any[]>;
-  community_list: FirebaseListObservable<any[]>;
+
   communityId: string = null;
-  plants = [];
+  plants: FirebaseListObservable<any[]>;
 
   selectedCommunity;
   communityName;
+  communityPlants: any[] = [];
 
-  constructor(private databaseService: DatabaseService, private route: ActivatedRoute, private location: Location) {
-
+  constructor(private databaseService: DatabaseService, private route: ActivatedRoute, private database: AngularFireDatabase) {
+    this.plants = database.list('native_plants/')
    }
 
   ngOnInit() {
-    // this.communityId = this.route.snapshot.paramMap.get('communityId');
+
     this.route.params.forEach((urlParameters) => {
       this.communityId = urlParameters['communityId'];
     })
-    // this.native_list = this.databaseService.getNativeList();
-    // this.community_list = this.databaseService.getCommunityList();
-    this.databaseService.getCommunityName(this.communityId);
-    this.communityName = this.databaseService.community;
+
     this.selectedCommunity = this.databaseService.getCommunityById(this.communityId);
-    this.databaseService.getPlantsOfCommunity(this.selectedCommunity.name);
-    this.plants = this.databaseService.plants;
-    this.communityName = this.selectedCommunity.name;
-    console.log(this.communityName);
-    console.log(this.selectedCommunity);
-    console.log(this.communityId);
-    console.log(this.plants);
+
+    this.selectedCommunity.subscribe( x => {
+      this.communityName = x.name; 
+      this.communityId = x.id;  
+      console.log(this.communityName);
+      this.databaseService.getNativeList().subscribe(values=> {
+        for (var i = 0; i < values.length; i ++) {
+          if (values[i].plant_community.includes(this.communityName) === true) {
+            this.communityPlants.push(values[i]);
+          }
+        }
+      });
+    });
   }
-  // setTimeout(() => (console.log(this.communityName)), 3000);
-  // console.log(this.communityName);
-  // console.log(this.selectedCommunity);
-  // console.log(this.communityId);
-  // console.log(this.plants);
 }

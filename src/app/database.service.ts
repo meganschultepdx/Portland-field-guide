@@ -32,26 +32,17 @@ export class DatabaseService {
     return this.database.object('communities/' + communityId); 
   }
 
-  getCommunityName(communityId: string) {
-    this.getCommunityById(communityId).subscribe(val => {
-      this.community = val.name;
-      console.log(val);
-      console.log(val.name);
-      console.log(this.community);
-    })
-    // let community = this.database.object('communities/' + communityId);
-    // return community.name;
-  }
-
-  getPlantsOfCommunity(community: string) {
+  getPlantsOfCommunity(communityName: string) {
     this.plants = [];
     this.getNativeList().subscribe(values=> {
       for (var i = 0; i < values.length; i ++) {
-        if (values[i].plant_community.includes(community) === true) {
+        if (values[i].plant_community.includes(communityName) === true) {
           this.plants.push(values[i]);
         }
       }
     });
+    console.log(this.plants);
+    // return this.plants;
   }
 
   getByType(type: string) {
