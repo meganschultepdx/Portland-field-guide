@@ -1,0 +1,17 @@
+#titleImage {
+  padding-top: 15%;
+  width: 100%;
+}
+
+#title {
+  text-align: center;
+}
+
+#alphabet {
+  text-align: center;
+}
+
+.letter {
+  text-align: center;
+  font-size: 25pt;
+}
