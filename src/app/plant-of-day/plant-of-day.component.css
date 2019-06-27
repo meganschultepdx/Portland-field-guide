@@ -4,6 +4,11 @@
     margin-top: 50px;
 }
 
+#twinflower {
+  width: 100%;
+  height: auto;
+}
+
 .explanation {
     padding-left: 20px;
   padding-right: 20px;

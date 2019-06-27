@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { NativeList } from '../native_list.model';
 import { Router } from '@angular/router';
 import { DatabaseService } from '../database.service';
 import { FirebaseListObservable } from 'angularfire2/database';

@@ -84,9 +84,11 @@
 
 #mission {
   font-size: 1em;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   padding-left: 20px;
   padding-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 /* @media screen and (min-width: 601px) {
@@ -113,8 +115,9 @@
   to { transform: translateY(0); }
 } */
 
+
 #secondArrow {
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 }
 
 .no-margin {
