@@ -17,3 +17,10 @@
     height: auto;
     text-align: center center;
 }
+
+.communityName {
+  padding-top: 15%;
+  text-align: center;
+  font-size: 1.0ems;
+  text-transform: uppercase;
+}

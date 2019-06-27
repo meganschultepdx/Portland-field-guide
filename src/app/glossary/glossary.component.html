@@ -5,32 +5,40 @@
     <img id="titleImage" src="../../assets/img/flower-diagram.jpg" alt="">
     <h1 id="title">Glossary</h1>
     <h5 id="alphabet">
-      <span (click)="showDiv('A')">A</span>
-      <span (click)="showDiv('B')">B</span>
-      <span (click)="showDiv('C')">C</span>
-      <span (click)="showDiv('D')">D</span>
-      <span (click)="showDiv('E')">E</span>
-      <span (click)="showDiv('F')">F</span>
-      <span (click)="showDiv('G')">G</span>
-      <span (click)="showDiv('H')">H</span>
-      <span (click)="showDiv('I')">I</span>
-      <span (click)="showDiv('J')">J</span>
-      <span (click)="showDiv('K')">K</span>
-      <span (click)="showDiv('L')">L</span>
-      <span (click)="showDiv('M')">M</span>
-      <span (click)="showDiv('N')">N</span>
-      <span (click)="showDiv('O')">O</span>
-      <span (click)="showDiv('P')">P</span>
-      <span (click)="showDiv('Q')">Q</span>
-      <span (click)="showDiv('R')">R</span>
-      <span (click)="showDiv('S')">S</span>
-      <span (click)="showDiv('T')">T</span>
-      <span (click)="showDiv('U')">U</span>
-      <span (click)="showDiv('V')">V</span>
-      <span (click)="showDiv('W')">W</span>
-      <span (click)="showDiv('X')">X</span>
-      <span (click)="showDiv('Y')">Y</span>
-      <span (click)="showDiv('Z')">Z</span></h5>
+      <div class="alphaOne">
+        <span (click)="showDiv('A')">A</span>
+        <span (click)="showDiv('B')">B</span>
+        <span (click)="showDiv('C')">C</span>
+        <span (click)="showDiv('D')">D</span>
+        <span (click)="showDiv('E')">E</span>
+        <span (click)="showDiv('F')">F</span>
+        <span (click)="showDiv('G')">G</span>
+        <span (click)="showDiv('H')">H</span>
+      </div>
+      <div class="alphaOne">
+        <span (click)="showDiv('I')">I</span>
+        <span (click)="showDiv('J')">J</span>
+        <span (click)="showDiv('K')">K</span>
+        <span (click)="showDiv('L')">L</span>
+        <span (click)="showDiv('M')">M</span>
+        <span (click)="showDiv('N')">N</span>
+        <span (click)="showDiv('O')">O</span>
+        <span (click)="showDiv('P')">P</span>
+      </div>
+      <div class="alphaOne">
+        <span (click)="showDiv('Q')">Q</span>
+        <span (click)="showDiv('R')">R</span>
+        <span (click)="showDiv('S')">S</span>
+        <span (click)="showDiv('T')">T</span>
+        <span (click)="showDiv('U')">U</span>
+        <span (click)="showDiv('V')">V</span>
+      </div>
+      <div class="alphaOne">
+        <span (click)="showDiv('W')">W</span>
+        <span (click)="showDiv('X')">X</span>
+        <span (click)="showDiv('Y')">Y</span>
+        <span (click)="showDiv('Z')">Z</span>
+      </div></h5>
       <h4 id="selectedLetter">{{alphabetLetter}}</h4>
       <div *ngFor="let word of definition">
         <ul class="collapsible">

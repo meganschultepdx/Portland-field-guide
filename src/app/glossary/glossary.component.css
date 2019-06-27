@@ -23,3 +23,8 @@
 .content-wrapper {
   padding-bottom: 100px;
 }
+
+.alphaOne {
+  word-spacing: 1em;
+  line-height: 30pt;
+}
