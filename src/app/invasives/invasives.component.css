@@ -7,6 +7,10 @@
   justify-content: center;
 }
 
+#graph {
+  width: 100%;
+}
+
 #bottomText {
   padding-bottom: 20px;
 }
@@ -29,9 +33,39 @@ h1 {
   text-align: center;
 }
 
+/* #ranks {
+  padding-bottom: 50px;
+} */
 
 hr {
   width: 250px;
   height: 2px;
   background: black;
+}
+
+.centered {
+  align-items: center;
+}
+
+.centered p {
+  margin-left: 20%;
+}
+
+@media screen and (min-width: 850px) {
+
+  #graph {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3em;
+  }
+
+  .centered p {
+    margin-left: 0;
+  }
 }
