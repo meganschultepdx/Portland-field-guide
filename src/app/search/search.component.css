@@ -16,7 +16,7 @@
   font-size: 2em;
   padding-top: 20px;
   padding-bottom: 5px;
-  text-transform: uppercase;  
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -37,4 +37,13 @@ label {
 
 .content-wrapper {
   padding-bottom: 100px;
+}
+
+@media screen and (min-width: 850px) {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3em;
+  }
 }

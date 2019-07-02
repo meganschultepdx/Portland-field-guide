@@ -1,61 +1,57 @@
 <html>
   <body>
-
-    <div  class="container">
+<div class="content-wrapper">
+    <div class="container">
         <h3 class="communityName">{{(selectedCommunity | async)?.name}}</h3>
 
         <p class="blurb">{{(selectedCommunity | async)?.blurb}}</p>
 
         <p class="blurb">{{(selectedCommunity | async)?.description}}</p>
+        <div class="list">
+          <div *ngFor="let plant of communityPlants">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="{{plant.image_url[0]}}">
+              </div>
 
-        <div *ngFor="let plant of communityPlants">
-        <div class="card">
-            <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="{{plant.image_url[0]}}">
-            </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">{{plant.common_name}} | <span class="sci-name">{{plant.scientific_name}}</span><i class="material-icons right"></i></span>
+                <h3 class="plant-type"><span class="bold-type"> Plant type:</span> {{plant.plant_type}}</h3>
+              </div>
 
-            <div class="card-content">
-              <span class="card-title activator grey-text text-darken-4">{{plant.common_name}} | <span class="sci-name">{{plant.scientific_name}}</span><i class="material-icons right"></i></span>
-              <h3 class="plant-type"><span class="bold-type"> Plant type:</span> {{plant.plant_type}}</h3>
-            </div>
-
-            <div class="card-reveal">
-              <span class="card-title grey-text text-darken-4">
-                <i class="material-icons right">close</i>
-                <span>
-                  {{plant.common_name}}
-                </span>|
-                <span class="sci-name">
-                  {{plant.scientific_name}}
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">
+                  <i class="material-icons right">close</i>
+                  <span>
+                    {{plant.common_name}}
+                  </span>|
+                  <span class="sci-name">
+                    {{plant.scientific_name}}
+                  </span>
                 </span>
-              </span>
-
-              <img id="second-image" class="activator" src="{{plant.image_url[1]}}">
-
-              <p>{{plant.description}}</p>
-
-              <p><b>Mature Height</b><br> {{plant.mature_height}}</p>
-              <p><b>Life Cycle</b> {{plant.life_cycle}}</p>
-              <ul>
+                <img id="second-image" class="activator" src="{{plant.image_url[1]}}">
+                <p>{{plant.description}}</p>
+                <p><b>Mature Height</b><br> {{plant.mature_height}}</p>
+                <p><b>Life Cycle</b> {{plant.life_cycle}}</p>
+                <ul>
                   <li *ngFor="let id of plant.light">{{id}}
                   </li>
                 </ul>
-              <p><b>Will grow in these soil moistures</b></p>
-              <ul>
+                <p><b>Will grow in these soil moistures</b></p>
+                <ul>
                   <li *ngFor="let id of plant.moisture">{{id}}
                   </li>
                 </ul>
-
-              <!-- <div [hidden]="!plant.has_flowers">
-                <div *ngFor="let property of plant.flowers">
-                  <p>{{property}}</p>
-                </div>
-              </div> -->
-
+                <!-- <div [hidden]="!plant.has_flowers">
+                  <div *ngFor="let property of plant.flowers">
+                    <p>{{property}}</p>
+                  </div>
+                </div> -->
+              </div>
             </div>
           </div>
         </div>
-
       </div>
+    </div>  
     </body>
 </html>

@@ -23,8 +23,8 @@
       </div>
     </div>
   </div>
-  <img id="graph" src="../../assets/img/invasion-curve.png" alt="invasion curve" width="100%">
-  <div class="container">
+  <img id="graph" src="../../assets/img/invasion-curve.png" alt="invasion curve">
+  <div class="container" id="ranks">
     <div>
       <ul class="collapsible">
         <li>
@@ -100,12 +100,15 @@
         <div class="card-reveal">
           <span class="card-title grey-text text-darken-4">{{plant.name}}<i
               class="material-icons right">close</i></span>
-          <p><b>Scientific Name</b><br>
+          <div class="centered">
+            <img src="{{plant.image_url[0]}}" width="75%">
+            <p><b>Scientific Name</b><br>
             <em>{{plant.scientific_name}}</em></p>
-          <p><b>Must eradicate?</b><br>
-             <em>{{plant.is_erradication_req}}</em></p>
-          <p><b>Invasive Rank</b><br>
-             <em>{{plant.invasive_rank}}</em></p>
+            <p><b>Must eradicate?</b><br>
+            <em>{{plant.is_erradication_req}}</em></p>
+            <p><b>Invasive Rank</b><br>
+            <em>{{plant.invasive_rank}}</em></p>
+          </div>
         </div>
       </div>
     </div>

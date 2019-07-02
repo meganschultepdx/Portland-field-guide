@@ -2,6 +2,11 @@
     font-style: italic;
 }
 
+.content-wrapper {
+  padding-bottom: 100px;
+}
+
+
 .plant-type {
     font-size: 1.25em;
     margin-top: -0.5em;
@@ -23,4 +28,14 @@
   text-align: center;
   font-size: 1.0ems;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 850px) {
+
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 3em;
+  }
 }
