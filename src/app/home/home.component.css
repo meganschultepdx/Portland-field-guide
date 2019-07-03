@@ -2,7 +2,6 @@
   padding-bottom: 100px;
 }
 
-
 .parallax-container {
   height: 600px;
   background-color: #c8d7d4;
@@ -103,6 +102,7 @@
 @media screen and (min-width: 600px) {
   #background {
     width: 80%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -111,6 +111,7 @@
 @media screen and (min-width: 700px) {
   #background {
     width: 75%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -119,6 +120,7 @@
 @media screen and (min-width: 850px) {
   #background {
     width: 70%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -127,6 +129,7 @@
 @media screen and (min-width: 950px) {
   #background {
     width: 60%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -135,6 +138,7 @@
 @media screen and (min-width: 1050px) {
   #background {
     width: 55%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -143,6 +147,7 @@
 @media screen and (min-width: 1200px) {
   #background {
     width: 50%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -151,6 +156,7 @@
 @media screen and (min-width: 1300px) {
   #background {
     width: 45%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -159,6 +165,7 @@
 @media screen and (min-width: 1400px) {
   #background {
     width: 40%;
+    display: block;
     margin-left: auto;
     margin-right: auto;
   }
@@ -189,14 +196,6 @@
   margin-top: 5px;
   margin-bottom: 5px;
 }
-
-/* @media screen and (min-width: 601px) {
-  #mission {
-    font-size: 2em;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-} */
 
 
 #secondArrow {
