@@ -1,64 +1,17 @@
 .content-wrapper {
   padding-bottom: 100px;
-  /* margin-bottom: 100px;  */
 }
 
-/* .plantOfDay {
-  padding-bottom: 300px;
-  margin-bottom: 1000px; 
-} */
-
-/* @font-face {
-  font-family: "Roboto-Regular";
-  src: url("../../assets/roboto/Roboto-Regular.ttf");
-} */
-
-.background {
-  background-size: cover; 
-  background-repeat: no-repeat;
-}
-
-/* @media screen and (min-width: 601px) {
-  #background {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-} */
 
 .parallax-container {
   height: 600px;
+  background-color: #c8d7d4;
 }
 
 .container {
   position: relative;
   text-align: center;
 }
-
-
-/* If the screen size is 601px wide or more, set the font-size of .centered to 3em */
-@media screen and (min-width: 601px) {
-  div.centered {
-    font-size: 3.5em;
-    top: -20;
-    z-index: 1;
-  }
-}
-
-/* @media screen and (min-width: 500px) {
-  div.centered {
-    font-size: 2em;
-    top: -30%;
-  }
-}
-
-@media screen and (min-width: 400px) {
-  div.centered {
-    font-size: 1.75em;
-    top: -30%;
-  }
-} */
-
 
 .centered {
   position: absolute;
@@ -73,6 +26,142 @@
 
 #title {
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 500px) {
+  div.centered {
+    font-size: 2.30em;
+    top: -17%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  div.centered {
+    font-size: 2.50em;
+    top: -15%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  div.centered {
+    font-size: 2.70em;
+    top: -14%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  div.centered {
+    font-size: 3em;
+    top: -13%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  div.centered {
+    font-size: 3.25em;
+    top: -12%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  div.centered {
+    font-size: 3.40em;
+    /* top: -10%; */
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.centered {
+    font-size: 3.60em;
+    top: -10%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  div.centered {
+    font-size: 3.60em;
+    top: -11%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  div.centered {
+    font-size: 3.70em;
+    top: -10%;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #background {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  #background {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  #background {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  #background {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  #background {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #background {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #background {
+    width: 45%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #background {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .more {
@@ -107,22 +196,6 @@
     margin-left: 40px;
     margin-right: 40px;
   }
-} */
-
-/* .come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
-}
-.come-in {
-  animation-duration: 0.6s;
-}
-.already-visible {
-  transform: translateY(0);
-  animation: none;
-}
-
-@keyframes come-in {
-  to { transform: translateY(0); }
 } */
 
 
