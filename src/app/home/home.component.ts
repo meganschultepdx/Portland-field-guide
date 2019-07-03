@@ -14,6 +14,11 @@ export class HomeComponent implements OnInit {
     $(document).ready(function () {
       $('.parallax').parallax();
     });
-    }
+  }
+
+  scrollWin(x, y) {
+    window.scrollTo(x, y);
+  }
+
 
 }
