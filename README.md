@@ -37,14 +37,9 @@ _The database and plant information was derrived from "Portland Plant List" (Jun
 
 `ng serve` in the project directory in Terminal. Go to http://localhost:4200/ in the browser of your choice. Note: The app will automatically reload if you change any of the source files. This is a continuous monitoring so to stop it just type the key combination `Ctrl + C` within the terminal.
 
-## Completed and in progress features
+## Screenshots of a few screens from the project
 
-- [x] Navigation bar
-- [x] Footer navigation bar
-- [x] Database is saved on Firebase
-- [x] Program is deployed
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![](src/assets/img/Frame.png)
 
 ## Resources
 _Portland Plant List, June 2016: `https://www.portlandoregon.gov/citycode/article/322280`._
